@@ -1,0 +1,7 @@
+[submodule "htm/Main/Software/Training/page/answer"]
+	path = htm/Main/Software/Training/page/answer
+	url = https://github.com/canerozdemircgi/Training
+
+[submodule "htm/Main/Document/Resume/Resume"]
+	path = htm/Main/Document/Resume/Resume
+	url = https://github.com/canerozdemircgi/Resume

@@ -1,0 +1,76 @@
+<span-description class='font_sans'>
+https://leetcode.com/problems/minimum-window-substring/
+Minimum Window Substring
+Given two strings <u>s</u> and <u>t</u> of lengths <u>m</u> and <u>n</u> respectively, return the <b>minimum window substring</b> of <u>s</u> such that every character in <u>t</u> (<b>including duplicates</b>) is included in the window. If there is no such substring, return the empty string <u>""</u>.
+
+The testcases will be generated such that the answer is <b>unique</b>.
+
+A <b>substring</b> is a contiguous sequence of characters within the string.
+</span-description>
+
+<br class='br20'>
+
+<fieldset-description class='font_mono'>
+Constraints
+<ul>
+<li>m == s.length</li>
+<li>n == t.length</li>
+<li>1 <= m, n <= 10<sup>5</sup></li>
+<li>s and t consist of uppercase and lowercase English letters.</li>
+</ul>
+</fieldset-description>
+
+<br class='br60'>
+
+<fieldset-description class='font_mono'>
+Example 1
+Input: s = "ADOBECODEBANC", t = "ABC"
+Output: "BANC"
+Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+</fieldset-description>
+
+<br class='br20'>
+
+<fieldset-description class='font_mono'>
+Example 2
+Input: s = "a", t = "a"
+Output: "a"
+Explanation: The entire string s is the minimum window.
+</fieldset-description>
+
+<br class='br20'>
+
+<fieldset-description class='font_mono'>
+Example 3
+Input: s = "a", t = "aa"
+Output: ""
+Explanation: Both 'a's from t must be included in the window.
+Since the largest window of s only has one 'a', return empty string.
+</fieldset-description>
+
+<br class='br60'>
+
+<fieldset-description class='font_sans'>
+Hint 1
+Use two pointers to create a window of letters in S, which would have all the characters from T.
+</fieldset-description>
+
+<br class='br20'>
+
+<fieldset-description class='font_sans'>
+Hint 2
+Since you have to find the minimum window in S which has all the characters from T, you need to expand and contract the window using the two pointers and keep checking the window for all the characters. This approach is also called Sliding Window Approach.
+
+L ------------------------ R , Suppose this is the window that contains all characters of T
+
+        L----------------- R , this is the contracted window. We found a smaller window that still contains all the characters in T
+
+When the window is no longer valid, start expanding again using the right pointer.
+</fieldset-description>
+
+<br class='br60'>
+
+<fieldset-description class='font_sans'>
+Follow up
+Could you find an algorithm that runs in O(m + n) time?
+</fieldset-description>

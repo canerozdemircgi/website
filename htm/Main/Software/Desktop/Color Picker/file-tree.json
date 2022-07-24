@@ -1,0 +1,30 @@
+{
+	"downloads":
+	[
+		{
+			"label": "<span class='href-text-none'>> &nbsp;Latest Version&nbsp; <<br class='br05'>[ Source ]</span><br class='br05'>GitHub<br class='br05'>",
+			"url": "https://github.com/canerozdemircgi/Color-Picker"
+		},
+		{
+			"label": "<span class='href-text-none'>> &nbsp;Latest Version&nbsp; <<br class='br05'>[ Binary ]</span><br class='br05'>MediaFire<br class='br20'>",
+			"url": "https://www.mediafire.com/file/5hmkiff7573n36t/ColorPicker.7z/file"
+		},
+		{
+			"label": "ArtStation",
+			"url": "https://www.artstation.com/artwork/v2wLyA"
+		},
+		{
+			"label": "Softpedia",
+			"url": "https://www.softpedia.com/get/Internet/WEB-Design/Web-Design-related/Color-Picker-UD.shtml"
+		},
+		{
+			"label": "AlternativeTo",
+			"url": "https://alternativeto.net/software/colorpicker-by-canerozdemircgi/"
+		}
+	],
+	"images":
+	[
+		"01.png",
+		"02.png"
+	]
+}

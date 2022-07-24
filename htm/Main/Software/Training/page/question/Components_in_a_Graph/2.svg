@@ -1,0 +1,28 @@
+<svg viewBox="0 0 116 260" xmlns="http://www.w3.org/2000/svg">
+	<path d="m0 0h116v260h-116z" fill="#fff"/>
+	<g transform="translate(4 256)">
+		<ellipse cx="18" cy="-72" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-68.3">1</text>
+		<ellipse cx="90" cy="-72" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="90" y="-68.3">6</text>
+		<path d="m36.1686-72h35.4181" fill="none" stroke="#000"/>
+		<ellipse cx="18" cy="-18" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-14.3">2</text>
+		<path d="m32.5703-28.9277c12.4917-9.3688 30.3957-22.7968 42.8811-32.1608" fill="none" stroke="#000"/>
+		<ellipse cx="90" cy="-18" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="90" y="-14.3">7</text>
+		<path d="m36.1686-18h35.4181" fill="none" stroke="#000"/>
+		<ellipse cx="18" cy="-126" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-122.3">3</text>
+		<ellipse cx="90" cy="-126" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="90" y="-122.3">8</text>
+		<path d="m36.1686-126h35.4181" fill="none" stroke="#000"/>
+		<ellipse cx="18" cy="-180" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-176.3">4</text>
+		<ellipse cx="90" cy="-180" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="90" y="-176.3">9</text>
+		<path d="m36.1686-180h35.4181" fill="none" stroke="#000"/>
+		<ellipse cx="18" cy="-234" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-230.3">5</text>
+	</g>
+</svg>

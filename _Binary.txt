@@ -1,0 +1,7 @@
+*.7z
+*.gif
+*.jar
+*.jpg
+*.otf
+*.png
+*.woff2

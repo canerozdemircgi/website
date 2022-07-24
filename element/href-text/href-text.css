@@ -1,0 +1,33 @@
+.href-text
+{
+	display: grid;
+
+	text-shadow:
+		0 0 2px var(--link-color),
+		0 0 4px var(--link-color),
+		0 0 8px var(--link-color);
+}
+
+.href-text:visited
+{
+	text-shadow:
+		0 0 2px var(--link-visited-color),
+		0 0 4px var(--link-visited-color),
+		0 0 8px var(--link-visited-color);
+}
+
+.href-text:hover,
+.href-text:visited:hover
+{
+	text-shadow:
+		0 0 2px var(--selection-color),
+		0 0 4px var(--selection-color),
+		0 0 8px var(--selection-color);
+}
+
+.href-text-none
+{
+	cursor: default;
+
+	text-shadow: none;
+}

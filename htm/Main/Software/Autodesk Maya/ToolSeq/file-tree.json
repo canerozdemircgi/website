@@ -1,0 +1,53 @@
+{
+	"downloads":
+	[
+		{
+			"label": "<span class='href-text-none'>> &nbsp;Latest Version&nbsp; <</span><br class='br05'>GitHub<br class='br20'>",
+			"url": "https://github.com/canerozdemircgi/ToolSeq"
+		},
+		{
+			"label": "Autodesk App Store<br class='br05'><span class='href-text-none'>[ Windows ]</span>",
+			"url": "https://apps.autodesk.com/MAYA/en/Detail/Index?id=8760708002296872921&os=Win64&appLang=en"
+		},
+		{
+			"label": "Autodesk App Store<br class='br05'><span class='href-text-none'>[ Linux ]</span>",
+			"url": "https://apps.autodesk.com/MAYA/en/Detail/Index?id=8760708002296872921&os=Linux&appLang=en"
+		},
+		{
+			"label": "Autodesk App Store<br class='br05'><span class='href-text-none'>[ Mac ]</span>",
+			"url": "https://apps.autodesk.com/MAYA/en/Detail/Index?id=8760708002296872921&os=Mac&appLang=en"
+		},
+		{
+			"label": "ArtStation",
+			"url": "https://www.artstation.com/artwork/8eOArq"
+		},
+		{
+			"label": "Highend3D<br class='br20'>",
+			"url": "https://www.highend3d.com/maya/script/toolseq-for-maya"
+		},
+		{
+			"label": "Video Tutorials",
+			"url": "index.html?path=Main/Video/ToolSeq"
+		}
+	],
+	"images":
+	[
+		"shelf_Caner.png",
+		"shelf_ToolSeq.png",
+		"ToolSeq_Cameras.png",
+		"ToolSeq_Developer.png",
+		"ToolSeq_Displacement.png",
+		"ToolSeq_Distance.png",
+		"ToolSeq_Explode.png",
+		"ToolSeq_Formula.png",
+		"ToolSeq_Freeze.png",
+		"ToolSeq_ItemHud.png",
+		"ToolSeq_Namer.png",
+		"ToolSeq_Pivot.png",
+		"ToolSeq_Randomizer.png",
+		"ToolSeq_Select.png",
+		"ToolSeq_Unaverage.png",
+		"ToolSeq_Uninstance.png",
+		"ToolSeq_UV.png"
+	]
+}

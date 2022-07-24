@@ -1,0 +1,44 @@
+.span-description-up,
+.span-description-dw
+{
+	font-family: 'Roboto Slab', serif;
+	text-align: left;
+
+	display: inline-block;
+	white-space: pre-line;
+	padding: 10px;
+
+	color: var(--background-color);
+	backdrop-filter: invert(100%);
+
+	line-height: calc(100% + 8px);
+	overflow: hidden;
+}
+
+.span-description-up::before,
+.span-description-dw::before
+{
+	content: '';
+	display: block;
+
+	margin-top: -4px;
+}
+
+.span-description-up::after,
+.span-description-dw::after
+{
+	content: '';
+	display: block;
+
+	margin-bottom: -4px;
+}
+
+.span-description-up
+{
+	border-radius: 4px 4px 0 0;
+}
+
+.span-description-dw
+{
+	border-radius: 0 0 4px 4px;
+}

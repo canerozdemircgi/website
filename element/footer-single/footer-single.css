@@ -1,0 +1,19 @@
+footer-single
+{
+	font-size: 14px;
+	line-height: 14px;
+
+	padding: 20px;
+	text-align: center;
+
+	border: 2px solid var(--border-color);
+	border-radius: 8px;
+}
+
+.footer_single_sign
+{
+	font-family: 'Roboto Mono', monospace;
+
+	word-break: break-word;
+	color: var(--matrix-color);
+}

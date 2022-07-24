@@ -1,0 +1,20 @@
+<svg viewBox="0 0 116 206" xmlns="http://www.w3.org/2000/svg">
+	<path d="m0 0h116v206h-116z" fill="#fff"/>
+	<g transform="translate(4 202)">
+		<ellipse cx="18" cy="-45" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-41.3">1</text>
+		<ellipse cx="90" cy="-72" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="90" y="-68.3">5</text>
+		<path d="m35.063-51.3986c11.4774-4.304 26.5448-9.9543 37.9965-14.2487" fill="none" stroke="#000"/>
+		<ellipse cx="90" cy="-18" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="90" y="-14.3">6</text>
+		<path d="m35.063-38.6014c11.4774 4.304 26.5448 9.9543 37.9965 14.2487" fill="none" stroke="#000"/>
+		<ellipse cx="18" cy="-126" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-122.3">2</text>
+		<ellipse cx="90" cy="-126" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="90" y="-122.3">4</text>
+		<path d="m36.1686-126h35.4181" fill="none" stroke="#000"/>
+		<ellipse cx="18" cy="-180" fill="#aef5b2" rx="18" ry="18" stroke="#1cb361" stroke-width="3"/>
+		<text font-family="Times,serif" font-size="14" text-anchor="middle" x="18" y="-176.3">3</text>
+	</g>
+</svg>

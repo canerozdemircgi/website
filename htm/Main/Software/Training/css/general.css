@@ -1,0 +1,25 @@
+:root
+{
+	--background-color: #202020;
+	--foreground-color: #f0f0f0;
+	--border-out-color: #808080;
+
+	--selection-color: #f0f080fe;
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+
+::selection
+{
+	background-color: var(--selection-color);
+	color: var(--background-color);
+}

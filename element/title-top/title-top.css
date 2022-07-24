@@ -1,0 +1,33 @@
+title-top
+{
+	display: flex;
+	flex-wrap: wrap;
+	white-space: pre;
+}
+
+.title-top-char
+{
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 500;
+
+	color: var(--border-color);
+
+	transition:
+		color 0.5s ease,
+		filter 0.5s ease;
+}
+
+.title-top-char-light
+{
+	color: var(--foreground-color);
+	filter:
+		drop-shadow(0 0 2px var(--header-color))
+		drop-shadow(0 0 4px var(--header-color))
+		drop-shadow(0 0 8px var(--header-color))
+		drop-shadow(0 0 16px var(--header-color));
+
+	transition:
+		color 0.5s ease,
+		filter 0.5s ease;
+}
