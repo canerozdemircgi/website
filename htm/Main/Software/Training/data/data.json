@@ -1,0 +1,136 @@
+{
+	"Array":
+	{
+		"3Sum": "3Sum",
+		"Best Time to Buy and Sell Stock": "Best_Time_to_Buy_and_Sell_Stock",
+		"Container With Most Water": "Container_With_Most_Water",
+		"Find Minimum in Rotated Sorted Array": "Find_Minimum_in_Rotated_Sorted_Array",
+		"Letter Combinations of a Phone Number": "Letter_Combinations_of_a_Phone_Number",
+		"Maximum Product Subarray": "Maximum_Product_Subarray",
+		"Maximum Subarray": "Maximum_Subarray",
+		"Missing Number": "Missing_Number",
+		"Product of Array Except Self": "Product_of_Array_Except_Self",
+		"Search in Rotated Sorted Array": "Search_in_Rotated_Sorted_Array"
+	},
+
+	"Binary":
+	{
+		"Counting Bits": "Counting_Bits",
+		"Number of 1 Bits": "Number_of_1_Bits",
+		"Reverse Bits": "Reverse_Bits",
+		"Sum of Two Integers": "Sum_of_Two_Integers"
+	},
+
+	"Dynamic Programming":
+	{
+		"Climbing Stairs": "Climbing_Stairs",
+		"Coin Change": "Coin_Change",
+		"Combination Sum IV": "Combination_Sum_IV",
+		"Decode Ways": "Decode_Ways",
+		"House Robber": "House_Robber",
+		"House Robber II": "House_Robber_II",
+		"Jump Game": "Jump_Game",
+		"Longest Common Subsequence": "Longest_Common_Subsequence",
+		"Longest Consecutive Sequence": "Longest_Consecutive_Sequence",
+		"Longest Increasing Subsequence": "Longest_Increasing_Subsequence",
+		"Unique Paths": "Unique_Paths",
+		"Word Break": "Word_Break"
+	},
+
+	"Graph":
+	{
+		"Alien Dictionary": "Alien_Dictionary",
+		"Clone Graph": "Clone_Graph",
+		"Components in a Graph": "Components_in_a_Graph",
+		"Course Schedule": "Course_Schedule",
+		"Graph Valid Tree": "Graph_Valid_Tree",
+		"Number of Distinct Islands II": "Number_of_Distinct_Islands_II",
+		"Number of Islands": "Number_of_Islands",
+		"Pacific Atlantic Water Flow": "Pacific_Atlantic_Water_Flow",
+		"Word Search": "Word_Search",
+		"Word Search II": "Word_Search_II"
+	},
+
+	"Heap":
+	{
+		"Find Median from Data Stream": "Find_Median_from_Data_Stream",
+		"Kth Largest Element in an Array": "Kth_Largest_Element_in_an_Array",
+		"Top K Frequent Elements": "Top_K_Frequent_Elements"
+	},
+
+	"Interval":
+	{
+		"Insert Interval": "Insert_Interval",
+		"Meeting Rooms": "Meeting_Rooms",
+		"Meeting Rooms II": "Meeting_Rooms_II",
+		"Merge Intervals": "Merge_Intervals",
+		"Non Overlapping Intervals": "Non_Overlapping_Intervals"
+	},
+
+	"Linked List":
+	{
+		"Linked List Cycle": "Linked_List_Cycle",
+		"Merge k Sorted Lists": "Merge_k_Sorted_Lists",
+		"Merge Two Sorted Lists": "Merge_Two_Sorted_Lists",
+		"Remove Nth Node from End of List": "Remove_Nth_Node_from_End_of_List",
+		"Reorder List": "Reorder_List",
+		"Reverse Linked List": "Reverse_Linked_List"
+	},
+
+	"Matrix":
+	{
+		"Rotate Image": "Rotate_Image",
+		"Set Matrix Zeroes": "Set_Matrix_Zeroes",
+		"Spiral Matrix": "Spiral_Matrix"
+	},
+
+	"String":
+	{
+		"Decode String": "Decode_String",
+		"Encode and Decode Strings": "Encode_and_Decode_Strings",
+		"Group Anagrams": "Group_Anagrams",
+		"Longest Palindromic Substring": "Longest_Palindromic_Substring",
+		"Longest Repeating Character Replacement": "Longest_Repeating_Character_Replacement",
+		"Longest Substring Without Repeating Characters": "Longest_Substring_Without_Repeating_Characters",
+		"Minimum Window Substring": "Minimum_Window_Substring",
+		"One Edit Distance": "One_Edit_Distance",
+		"Palindromic Substrings": "Palindromic_Substrings",
+		"Text Justification": "Text_Justification",
+		"Valid Anagram": "Valid_Anagram",
+		"Valid Palindrome": "Valid_Palindrome",
+		"Valid Parentheses": "Valid_Parentheses"
+	},
+
+	"Tree":
+	{
+		"Binary Tree Level Order Traversal": "Binary_Tree_Level_Order_Traversal",
+		"Binary Tree Maximum Path Sum": "Binary_Tree_Maximum_Path_Sum",
+		"Construct Binary Tree from Preorder and Inorder Traversal": "Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal",
+		"Design Add and Search Words Data Structure": "Design_Add_and_Search_Words_Data_Structure",
+		"Implement Trie (Prefix Tree)": "Implement_Trie_(Prefix_Tree)",
+		"Invert Binary Tree": "Invert_Binary_Tree",
+		"Kth Smallest Element in a BST": "Kth_Smallest_Element_in_a_BST",
+		"Lowest Common Ancestor of a Binary Search Tree": "Lowest_Common_Ancestor_of_a_Binary_Search_Tree",
+		"Maximum Depth of Binary Tree": "Maximum_Depth_of_Binary_Tree",
+		"Same Tree": "Same_Tree",
+		"Serialize and Deserialize Binary Tree": "Serialize_and_Deserialize_Binary_Tree",
+		"Subtree of Another Tree": "Subtree_of_Another_Tree",
+		"Validate Binary Search Tree": "Validate_Binary_Search_Tree"
+	},
+
+	"Other":
+	{
+		"Debug Json": "Debug_Json",
+		"Interp Linear": "Interp_Linear",
+		"Random Basic": "Random_Basic",
+		"Search Binary": "Search_Binary",
+		"Sort Bubble": "Sort_Bubble",
+		"Sort Insertion": "Sort_Insertion",
+		"Sort Merge": "Sort_Merge",
+		"Sort Patience": "Sort_Patience",
+		"Sort Quick": "Sort_Quick",
+		"Sort Selection": "Sort_Selection",
+		"Trie": "Trie",
+		"Union Find": "Union_Find"
+	}
+}
