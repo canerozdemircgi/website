@@ -1,0 +1,11 @@
+.hljs-ln-numbers
+{
+	text-align: right;
+
+	color: var(--border-out-color);
+}
+
+.hljs-ln-line.hljs-ln-numbers
+{
+	padding-right: 15px;
+}

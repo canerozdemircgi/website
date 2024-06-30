@@ -1,0 +1,54 @@
+.span-description-up,
+.span-description-dw
+{
+	font-family: 'Roboto Slab', serif;
+	text-align: left;
+	white-space: pre-line;
+
+	display: inline-block;
+	vertical-align: middle;
+
+	backdrop-filter: invert(100%);
+	color: var(--background-color);
+
+	padding: 10px;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+@supports not (backdrop-filter: invert(100%))
+{
+	.span-description-up,
+	.span-description-dw
+	{
+		background-color: var(--foreground-color);
+	}
+}
+
+.span-description-up::before,
+.span-description-dw::before
+{
+	content: '';
+	display: block;
+
+	margin-top: -4px;
+}
+
+.span-description-up::after,
+.span-description-dw::after
+{
+	content: '';
+	display: block;
+
+	margin-bottom: -4px;
+}
+
+.span-description-up
+{
+	border-radius: 4px 4px 0 0;
+}
+
+.span-description-dw
+{
+	border-radius: 0 0 4px 4px;
+}
