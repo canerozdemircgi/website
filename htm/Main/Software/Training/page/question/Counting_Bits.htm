@@ -1,0 +1,72 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/counting-bits/
+Counting Bits
+Given an integer <u>n</u>, return an array <u>ans</u> of length <u>n + 1</u> such that for each <u>i</u> (<u>0 <= i <= n</u>), <u>ans[i]</u> is the <b>number of</b> <u>1</u><b>'s</b> in the binary representation of <u>i</u>.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>0 <= n <= 10<sup>5</sup></li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: n = 2
+Output: [0, 1, 1]
+Explanation
+0 --> 0
+1 --> 1
+2 --> 10
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: n = 5
+Output: [0, 1, 1, 2, 1, 2]
+Explanation
+0 --> 0
+1 --> 1
+2 --> 10
+3 --> 11
+4 --> 100
+5 --> 101
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+You should make use of what you have produced already.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+Divide the numbers in ranges like [2-3], [4-7], [8-15] and so on. And try to generate new range from previous.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 3
+Or does the odd/even status of the number help you in calculating the number of 1s?
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Follow up
+<ul>
+<li>It is very easy to come up with a solution with a runtime of O(n log n). Can you do it in linear time O(n) and possibly in a single pass?</li>
+<li>Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?</li>
+</ul>
+</fieldset-description>

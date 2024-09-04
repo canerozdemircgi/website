@@ -1,0 +1,141 @@
+button-branch
+{
+	display: none;
+}
+
+.button-branch
+{
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--button-color);
+	border-radius: 50%;
+}
+
+.button-branch:hover
+{
+	backdrop-filter: invert(100%);
+	color: var(--background-color);
+}
+
+@supports not (backdrop-filter: invert(100%))
+{
+	.button-branch:hover
+	{
+		background-color: var(--foreground-color);
+	}
+}
+
+.button-branch-image
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	fill: var(--foreground-color);
+
+	animation-name: button-branch-image_rotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.button-branch-image-wrapper2
+{
+	height: 100%;
+	rotate: 30deg;
+}
+
+@keyframes button-branch-image_rotate
+{
+	from
+	{
+		rotate: 0deg;
+	}
+
+	to
+	{
+		rotate: 360deg;
+	}
+}
+
+.button-branch-image-top,
+.button-branch-image-bottom,
+.button-branch-image-left,
+.button-branch-image-right
+{
+	position: absolute;
+	transition:
+		top 0.5s ease-out,
+		bottom 0.5s ease-out,
+		left 0.5s ease-out,
+		right 0.5s ease-out,
+		rotate 0.5s ease-out;
+
+	filter:
+		drop-shadow(0 0 1px var(--neon-link-visited-color))
+		drop-shadow(0 0 2px var(--neon-link-visited-color));
+}
+
+.button-branch-image-top
+{
+	top: 36px;
+	right: 36px;
+	rotate: 225deg;
+}
+
+.button-branch-image-bottom
+{
+	bottom: 36px;
+	left: 36px;
+	rotate: 225deg;
+}
+
+.button-branch-image-left
+{
+	top: 36px;
+	left: 36px;
+	rotate: 225deg;
+}
+
+.button-branch-image-right
+{
+	bottom: 36px;
+	right: 36px;
+	rotate: 225deg;
+}
+
+.button-branch:hover > .button-branch-image
+{
+	fill: var(--background-color);
+}
+
+.button-branch:hover > .button-branch-image .button-branch-image-top,
+.button-branch:hover > .button-branch-image .button-branch-image-bottom,
+.button-branch:hover > .button-branch-image .button-branch-image-left,
+.button-branch:hover > .button-branch-image .button-branch-image-right
+{
+	filter: none;
+}
+
+.button-branch:hover > .button-branch-image .button-branch-image-top
+{
+	rotate: 45deg;
+}
+
+.button-branch:hover > .button-branch-image .button-branch-image-bottom
+{
+	rotate: 45deg;
+}
+
+.button-branch:hover > .button-branch-image .button-branch-image-left
+{
+	rotate: 405deg;
+}
+
+.button-branch:hover > .button-branch-image .button-branch-image-right
+{
+	rotate: 405deg;
+}

@@ -1,0 +1,30 @@
+input-text
+{
+	display: grid;
+}
+
+.input-text
+{
+	padding: 10px 0;
+	text-align: center;
+
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+
+	border: 2px dashed var(--border-color);
+	border-radius: 4px;
+}
+
+.input-text:hover
+{
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+	border-color: var(--background-color);
+}
+
+.input-text:focus
+{
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+	border-color: var(--selection-color);
+}

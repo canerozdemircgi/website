@@ -1,0 +1,61 @@
+:root
+{
+	--border-in-color: #484848;
+
+	--link-color: #b0d0f0;
+	--link-visited-color: #77baa2;
+}
+
+body
+{
+	font: 15px 'Roboto', sans-serif;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+
+	margin: 10px;
+}
+
+fieldset
+{
+	display: grid;
+	grid-auto-columns: minmax(min-content, max-content);
+	row-gap: 10px;
+
+	margin: 0;
+	padding: 15px;
+
+	border: 2px solid var(--border-out-color);
+	border-radius: 4px;
+}
+
+fieldset > fieldset
+{
+	border-color: var(--border-in-color);
+}
+
+legend
+{
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+a
+{
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: var(--link-visited-color);
+}
+
+a:hover,
+a:visited:hover
+{
+	color: var(--selection-color);
+}

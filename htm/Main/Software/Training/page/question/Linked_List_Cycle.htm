@@ -1,0 +1,57 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/linked-list-cycle/
+Linked List Cycle
+Given head, the <u>head</u> of a linked list, determine if the linked list has a cycle in it.
+
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the <u>next</u> pointer. Internally, <u>pos</u> is used to denote the index of the node that tail's <u>next</u> pointer is connected to. <b>Note that <u>pos</u> is not passed as a parameter.</b>
+
+Return <u>true</u> if there is a cycle in the linked list. Otherwise, return <u>false</u>.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>The number of the nodes in the list is in the range [0, 10<sup>4</sup>].</li>
+<li>-10<sup>5</sup> <= Node.val <= 10<sup>5</sup></li>
+<li>pos is -1 or a valid index in the linked-list.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+<href-image src='page/question/Linked_List_Cycle/1.png' style='width: 300px; margin-top:8px; margin-bottom:8px;'></href-image>
+Input: head = [3, 2, 0, -4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+<href-image src='page/question/Linked_List_Cycle/2.png' style='width: 141px;'></href-image>
+Input: head = [1, 2], pos = 0
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+<href-image src='page/question/Linked_List_Cycle/3.png' style='width: 45px;'></href-image>
+Input: head = [1], pos = -1
+Output: false
+Explanation: There is no cycle in the linked list.
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Follow up
+Can you solve it using <u>O(1)</u> (i.e. constant) memory?
+</fieldset-description>

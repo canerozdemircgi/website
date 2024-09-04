@@ -1,0 +1,46 @@
+<span-description class='f_sans'>
+https://hackerrank.com/challenges/components-in-graph/problem
+Components in a Graph
+There are <b>2 x N</b> nodes in an undirected graph and a number of edges connecting some nodes. In each edge, the first value will be between <b>1</b> and <b>N</b>, inclusive. The second node will be between <b>N + 1</b> and <b>2 x N</b>, inclusive.
+
+Given a list of edges, determine the size of the <u>smallest</u> and <u>largest</u> connected components that have <b>2 or more</b> nodes. A node can have any number of connections. The highest node value will always be connected to <b>at least 1</b> other node.
+
+<b>Note</b> that single nodes should not be considered in the answer.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= NumberOfNodesN <= 15000</li>
+<li>1 <= bg[i][0] <= N</li>
+<li>N + 1 <= bg[i][1] <= 2N</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+<href-image src='page/question/Components_in_a_Graph/1.png' style='width: 185px;'></href-image>
+bg = [[1, 5], [1, 6], [2, 4]]
+Since the component with node 3 contains only one node, it is not considered.
+The number of vertices in the smallest connected component in the graph is 2 based on (2, 4).
+The number of vertices in the largest connected component in the graph is 3 i.e. 1 - 5 - 6.
+The smaller component contains 2 nodes and the larger contains 3.
+Return the array [2, 3].
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+<href-image src='page/question/Components_in_a_Graph/2.png' style='width: 185px;'></href-image>
+bg = [[1, 6], [2, 7], [3, 8], [4, 9], [2, 6]]
+Since the component with node 5 contains only one node, it is not considered.
+The number of vertices in the smallest connected component in the graph is 2 based on either (3, 8) or (4, 9).
+The number of vertices in the largest connected component in the graph is 4 i.e. 1 - 2 - 6 - 7.
+The smaller component contains 2 nodes and the larger contains 4.
+Return the array [2, 4].
+</fieldset-description>

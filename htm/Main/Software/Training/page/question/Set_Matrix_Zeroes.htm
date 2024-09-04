@@ -1,0 +1,76 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/set-matrix-zeroes/
+Set Matrix Zeroes
+Given an <u>m x n</u> integer <u>matrix</u>, if an element is <u>0</u>, set its entire row and column to <u>0</u>'s.
+
+You must do it in place.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>m == matrix.length</li>
+<li>n == matrix[0].length</li>
+<li>1 <= m, n <= 200</li>
+<li>-2<sup>31</sup> <= matrix[i][j] <= 2<sup>31</sup> - 1</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+<href-image src='page/question/Set_Matrix_Zeroes/1.jpg' style='width: 450px;'></href-image>
+Input: matrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
+Output: [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+<href-image src='page/question/Set_Matrix_Zeroes/2.jpg' style='width: 450px;'></href-image>
+Input: matrix = [[0, 1, 2, 0], [3, 4, 5, 2], [1, 3, 1, 5]]
+Output: [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+If any cell of the matrix has a zero we can record its row and column number using additional memory. But if you don't want to use extra memory then you can manipulate the array instead. i.e. simulating exactly what the question says.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+Setting cell values to zero on the fly while iterating might lead to discrepancies. What if you use some other integer value as your marker? There is still a better approach for this problem with 0(1) space.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 3
+We could have used 2 sets to keep a record of rows/columns which need to be set to zero. But for an O(1) space solution, you can use one of the rows and one of the columns to keep track of this information.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 4
+We can use the first cell of every row and column as a flag. This flag would determine whether a row or column has been set to zero.
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Follow up
+<ul>
+<li>A straightforward solution using O(mn) space is probably a bad idea.</li>
+<li>A simple improvement uses O(m + n) space, but still not the best solution.</li>
+<li>Could you devise a constant space solution?</li>
+</ul>
+</fieldset-description>

@@ -1,0 +1,65 @@
+{
+	"downloads":
+	[
+		{
+			"label": "License: GPLv3<div class='br05'></div>",
+			"label_post": "Version: <span id='version_content' class='version'>x.x.xx</span><div class='br20'></div>",
+			"url": "https://gnu.org/licenses/gpl-3.0-standalone.html",
+			"url_type": "caution"
+		},
+		{
+			"label": "GitHub<div class='br05'></div>",
+			"label_post": "[ Binary &#38; Source Code ]<div class='br20'></div>",
+			"url": "https://github.com/canerozdemircgi/ToolSeq/releases"
+		},
+		{
+			"label": "Tutorial<div class='br05'></div>",
+			"label_post": "[ Video Series ]<div class='br20'></div>",
+			"url": "index.html?path=Main/Video/ToolSeq"
+		},
+		{
+			"label": "Autodesk App Store<div class='br05'></div>",
+			"label_post": "[ Windows ]",
+			"url": "https://apps.autodesk.com/MAYA/en/Detail/Index?id=8760708002296872921&os=Win64&appLang=en"
+		},
+		{
+			"label": "Autodesk App Store<div class='br05'></div>",
+			"label_post": "[ Linux ]",
+			"url": "https://apps.autodesk.com/MAYA/en/Detail/Index?id=8760708002296872921&os=Linux&appLang=en"
+		},
+		{
+			"label": "Autodesk App Store<div class='br05'></div>",
+			"label_post": "[ Mac ]",
+			"url": "https://apps.autodesk.com/MAYA/en/Detail/Index?id=8760708002296872921&os=Mac&appLang=en"
+		},
+		{
+			"label": "ArtStation",
+			"url": "https://artstation.com/artwork/8eOArq"
+		},
+		{
+			"label": "Highend3D",
+			"url": "https://highend3d.com/maya/script/toolseq-for-maya"
+		}
+	],
+	"images":
+	[
+		"shelf_Caner.png",
+		"shelf_ToolSeq.png",
+		"ToolSeq_Cameras.png",
+		"ToolSeq_Developer.png",
+		"ToolSeq_Displacement.png",
+		"ToolSeq_Distance.png",
+		"ToolSeq_DupNamer.png",
+		"ToolSeq_Explode.png",
+		"ToolSeq_Formula.png",
+		"ToolSeq_Freeze.png",
+		"ToolSeq_ItemHud.png",
+		"ToolSeq_Pivot.png",
+		"ToolSeq_Randomizer.png",
+		"ToolSeq_ReNamer.png",
+		"ToolSeq_Select.png",
+		"ToolSeq_Unaverage.png",
+		"ToolSeq_Uninstance.png",
+		"ToolSeq_UV.png"
+	]
+}

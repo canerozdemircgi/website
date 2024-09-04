@@ -1,0 +1,75 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/container-with-most-water/
+Container With Most Water
+You are given an integer array <u>height</u> of length <u>n</u>. There are <u>n</u> vertical lines drawn such that the two endpoints of the <u>i<sup>th</sup></u> line are <u>(i, 0)</u> and <u>(i, height[i])</u>.
+
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+Return the maximum amount of water a container can store.
+
+<b>Notice</b> that you may not slant the container.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>n == height.length</li>
+<li>2 <= n <= 10<sup>5</sup></li>
+<li>0 <= height[i] <= 10<sup>4</sup></li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+<href-image src='page/question/Container_With_Most_Water/1.jpg' style='width: 600px;'></href-image>
+Input: height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+Output: 49
+Explanation: The above vertical lines are represented by array [1, 8, 6, 2, 5, 4, 8, 3, 7]. In this case, the max area of water (blue section) the container can contain is 49.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: height = [1, 1]
+Output: 1
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: height = [4, 3, 2, 1, 4]
+Output: 16
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 4
+Input: height = [1, 2, 1]
+Output: 2
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+The aim is to maximize the area formed between the vertical lines. The area of any container is calculated using the shorter line as length and the distance between the lines as the width of the rectangle.
+
+<b>Area = length of shorter vertical line * distance between lines</b>
+
+We can definitely get the maximum width container as the outermost lines have the maximum distance between them. However, this container <b>might not be the maximum in size</b> as one of the vertical lines of this container could be really short.
+<href-image src='page/question/Container_With_Most_Water/2.png' style='width: 500px;'></href-image>
+<href-image src='page/question/Container_With_Most_Water/3.png' style='width: 500px;'></href-image>
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+Start with the maximum width container and go to a shorter width container if there is a vertical line longer than the current containers shorter line. This way we are compromising on the width but we are looking forward to a longer length container.
+</fieldset-description>

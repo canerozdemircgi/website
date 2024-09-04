@@ -1,0 +1,28 @@
+#contact_section
+{
+	position: relative;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 45px;
+	row-gap: 20px;
+
+	word-break: break-word;
+}
+
+.contact_section_left
+{
+	text-align: right;
+}
+
+.contact_section_right
+{
+	text-align: left;
+}
+
+#contact_section_separator
+{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}

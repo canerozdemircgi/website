@@ -1,0 +1,167 @@
+@font-face
+{
+	font-family: 'TeX Gyre Chorus';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../resource/font/texgyrechorus-mediumitalic.otf');
+	font-display: swap;
+}
+
+:root
+{
+	--background-color: #202020;
+	--foreground-color: #f0f0f0;
+	--border-color: #808080;
+
+	--selection-color: #f0f080;
+	--selection-image-color: #f0f08044;
+
+	--neon-header-color: #ff4040;
+	--neon-matrix-color: #00c000;
+	--neon-title-color: #c0c000;
+	--neon-caution-color: #ff40ff;
+	--neon-link-color: #44aaff;
+	--neon-link-visited-color: #00cccc;
+
+	--button-color: #f0f0f020;
+	--button-focus-color: #54789a80;
+	--button-active-color: #347c5480;
+
+	--menu-width: 210px;
+	--menu-height: 50px;
+	--menu-gap: 10px;
+}
+
+@media (max-width: 410px)
+{
+	:root
+	{
+		--menu-width: 190px;
+	}
+}
+
+*
+{
+	box-sizing: border-box;
+	max-height: 999999px;
+	font: inherit;
+	letter-spacing: 0.125px;
+}
+
+body
+{
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	font: 15px 'Roboto', sans-serif;
+	line-height: 1;
+
+	min-height: calc(100vh - 20px);
+	margin: 10px;
+
+	display: grid;
+	grid-template-rows: max-content max-content max-content max-content max-content 1fr max-content;
+	row-gap: 20px;
+
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+
+::selection
+{
+	background-color: var(--selection-color);
+	color: var(--background-color);
+}
+
+img::selection
+{
+	background-color: var(--selection-image-color);
+}
+
+br::selection
+{
+	background-color: transparent;
+	color: transparent;
+}
+
+.selectable
+{
+	user-select: text;
+}
+
+.unselectable
+{
+	user-select: none;
+}
+
+:focus
+{
+	outline: none !important;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+img
+{
+	object-fit: contain;
+	width: max-content;
+	max-width: 100%;
+}
+
+button,
+input
+{
+	padding: 10px;
+}
+
+iframe
+{
+	display: block;
+	width: 100%;
+	border: none;
+}
+
+.version
+{
+	color: var(--selection-color);
+}
+
+.br00
+{
+	content: '';
+	display: block;
+
+	line-height: 0;
+	margin-bottom: 0;
+}
+
+.br05
+{
+	content: '';
+	display: block;
+
+	line-height: 0;
+	margin-bottom: 5px;
+}
+
+.br10
+{
+	content: '';
+	display: block;
+
+	line-height: 0;
+	margin-bottom: 10px;
+}
+
+.br20
+{
+	content: '';
+	display: block;
+
+	line-height: 0;
+	margin-bottom: 20px;
+}

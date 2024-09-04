@@ -1,0 +1,21 @@
+.span-description-bottom
+{
+	white-space: pre-wrap;
+}
+
+.span-description-bottom b
+{
+	font-weight: normal;
+
+	color: var(--emphasis1-color);
+}
+
+.span-description-bottom u
+{
+	text-decoration: none;
+
+	padding: 0 1px;
+
+	background-color: var(--emphasis2-color);
+	border-radius: 2px;
+}

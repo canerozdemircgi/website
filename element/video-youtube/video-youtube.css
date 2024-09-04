@@ -1,0 +1,11 @@
+video-youtube
+{
+	width: 100%;
+}
+
+.video-youtube-iframe
+{
+	aspect-ratio: 16 / 9;
+
+	opacity: 0.98;
+}

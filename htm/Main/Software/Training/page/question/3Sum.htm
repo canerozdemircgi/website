@@ -1,0 +1,68 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/3sum/
+3Sum
+Given an integer array nums, return all the triplets <u>[nums[i], nums[j], nums[k]]</u> such that <u>i != j</u>, <u>i != k</u>, and <u>j != k</u>, and <u>nums[i] + nums[j] + nums[k] == 0</u>.
+
+Notice that the solution set must not contain duplicate triplets.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>0 <= nums.length <= 3000</li>
+<li>-10<sup>5</sup> <= nums[i] <= 10<sup>5</sup></li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: nums = [-1, 0, 1, 2, -1, -4]
+Output: [[-1, -1, 2], [-1, 0, 1]]
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: nums = []
+Output: []
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: nums = [0]
+Output: []
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+So, we essentially need to find three numbers x, y, and z such that they add up to the given value. If we fix one of the numbers say x, we are left with the two-sum problem at hand!
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+For the two-sum problem, if we fix one of the numbers, say
+x
+we have to scan the entire array to find the next number
+y
+which is
+value - x
+where value is the input parameter. Can we change our array somehow so that this search becomes faster?
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 3
+The second train of thought for two-sum is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?
+</fieldset-description>

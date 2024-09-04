@@ -1,0 +1,47 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/decode-string/
+Decode String
+Given an encoded string, return its decoded string.
+
+The encoding rule is: <u>k[encoded_string]</u>, where the <u>encoded_string</u> inside the square brackets is being repeated exactly <u>k</u> times. Note that <u>k</u> is guaranteed to be a positive integer.
+
+You may assume that the input string is always valid; there are no extra white spaces, square brackets are well-formed, etc. Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, <u>k</u>. For example, there will not be input like <u>3a</u> or <u>2[4]</u>.
+
+The test cases are generated so that the length of the output will never exceed <u>10<sup>5</sup></u>.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= s.length <= 30</li>
+<li>s consists of lowercase English letters, digits, and square brackets '[]'.</li>
+<li>s is guaranteed to be a valid input.</li>
+<li>All the integers in s are in the range [1, 300].</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: s = "3[a]2[bc]"
+Output: "aaabcbc"
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: s = "3[a2[c]]"
+Output: "accaccacc"
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: s = "2[abc]3[cd]ef"
+Output: "abcabccdcdcdef"
+</fieldset-description>

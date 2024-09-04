@@ -1,0 +1,48 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+Lowest Common Ancestor of a Binary Search Tree
+Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes <u>p</u> and <u>q</u> as the lowest node in <u>T</u> that has both <u>p</u> and <u>q</u> as descendants (where we allow <b>a node to be a descendant of itself</b>).”
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>The number of nodes in the tree is in the range [2, 10<sup>5</sup>].</li>
+<li>-10<sup>9</sup> <= Node.val <= 10<sup>9</sup></li>
+<li>All Node.val are unique.</li>
+<li>p != q</li>
+<li>p and q will exist in the BST.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+<href-image src='page/question/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/1.png' style='width: 200px;'></href-image>
+Input: root = [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], p = 2, q = 8
+Output: 6
+Explanation: The LCA of nodes 2 and 8 is 6.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+<href-image src='page/question/Lowest_Common_Ancestor_of_a_Binary_Search_Tree/2.png' style='width: 200px;'></href-image>
+Input: root = [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], p = 2, q = 4
+Output: 2
+Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: root = [2, 1], p = 2, q = 1
+Output: 2
+</fieldset-description>
