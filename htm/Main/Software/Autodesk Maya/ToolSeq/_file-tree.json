@@ -2,7 +2,7 @@
 	"downloads":
 	[
 		{
-			"label": "License: GPLv3<div class='br05'></div>",
+			"label": "License: GPLv3+<div class='br05'></div>",
 			"label_post": "Version: <span id='version_content' class='version'>x.x.xx</span><div class='br20'></div>",
 			"url": "https://gnu.org/licenses/gpl-3.0-standalone.html",
 			"url_type": "caution"

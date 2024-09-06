@@ -47,6 +47,19 @@
 							"path": "Main/Software/Training",
 							"children": [],
 							"loader": "external"
+						},
+						{
+							"text": "Web",
+							"path": "Main/Software/Web",
+							"children":
+							[
+								{
+									"text": "Bladder Diary",
+									"path": "Main/Software/Web/Bladder Diary",
+									"children": [],
+									"loader": "internal"
+								}
+							]
 						}
 					]
 				},
