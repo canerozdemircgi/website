@@ -1,0 +1,15 @@
+label-full
+{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+
+	border: 2px solid var(--border-color);
+	border-radius: 4px;
+}
+
+.label-full-tail
+{
+	margin-left: auto;
+	margin-right: 10px;
+}
