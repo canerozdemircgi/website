@@ -1,0 +1,38 @@
+Welcome to the ToolSeq tutorials of Autodesk Maya.
+Alright so we will continue to ToolSeq Randomizer.
+We will clarify rest of function options over here.
+To demonstrate these options a little bit better, let's begin with sorting.
+As you may guess, this combobox will sort your random values by ascending or descending order.
+So in each iteration, you will get a bigger or a smaller value than previous.
+Alright so let's try it out.
+Function limit combobox over here can be used to specify minimum and maximum limits of functions.
+It is quite easy to control boundaries of Uniform, Triangular and Solo functions.
+But for others you may struggle more, if you need exact minimum and maximum limits for your procedure.
+So you can use any of Clamp or Return then assign your minimum and maximum values to control overflow.
+Clamp will simply assign minimum if the value is below minimum and assign maximum if the value is above maximum.
+Return will equally redistribute these values by using float mod interpolation so no clutter happens at the lowest and highest levels.
+Let's see this one in action.
+Let's talk about interval. This one divides results into intervals and round your values to the closest split.
+You have to append a big straight vertical bar then append the divisor at the end of each line.
+Let's try what I am talking about.
+If you use percentage and interval at the same time, first bar goes to percentage, second bar goes to interval.
+Let's see this one.
+If you don't wanna apply interval to any of multiple functions, you can bypass interval by typing zero value as divisor.
+Let's talk about exclude. This one allows you to eliminate spesified values from results.
+You have to append a big straight vertical bar then append one exclusion or multiple exclusions with space separator at the end of each line.
+If you use percentage and exclude at the same time, first bar goes to percentage, second bar goes to exclude.
+If you use percentage and interval and exclude at the same time, first bar goes to percentage, second bar goes to interval, third bar goes to exclude.
+Let's try what I am talking about.
+If you don't wanna apply exclude to any of multiple functions, you can bypass exclude by typing inf value which means infinite.
+Let's see this one.
+We have been encountered pre-commands and post-commands several times before this moment.
+Pre-commands is for commands which will be evaluated only once before everything else.
+Post-commands is for commands which will be evaluated only once after everything else.
+You may remember that a few presets over here enable pre-commands or post-commands automatically for you.
+Variables set in pre-commands can be captured in post-commands without doing anything extra.
+Let's see this one.
+These panels are standard in ToolSeq so middle-click on labels to clear panels.
+There is a custom context menu button called ITEMS with both of these panels.
+Insert this string list variable when you need all items in the items panel regardless they have been separated with space or new line.
+Chamfer preset and Paint presets use this variable as you may find out.
+Thanks for watching me, see you in the next video.

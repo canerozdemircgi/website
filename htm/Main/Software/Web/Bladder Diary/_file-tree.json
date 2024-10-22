@@ -1,0 +1,27 @@
+{
+	"downloads":
+	[
+		{
+			"label": "License: GPLv3+<div class='br05'></div>",
+			"label_post": "Version: <span id='version_content' class='version'>x.x.xx</span><div class='br20'></div>",
+			"url": "https://gnu.org/licenses/gpl-3.0-standalone.html",
+			"url_type": "caution"
+		},
+		{
+			"label": "GitHub<div class='br05'></div>",
+			"label_post": "[ Web Application ]<div class='br20'></div>",
+			"url": "https://canerozdemircgi.github.io/bladder-diary/"
+		},
+		{
+			"label": "GitHub<div class='br05'></div>",
+			"label_post": "[ Source Code ]",
+			"url": "https://github.com/canerozdemircgi/bladder-diary"
+		}
+	],
+	"images":
+	[
+		"Bladder Diary - 1.png",
+		"Bladder Diary - 2.png",
+		"Bladder Diary - 3.png"
+	]
+}

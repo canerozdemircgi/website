@@ -1,0 +1,53 @@
+Welcome to the ToolSeq tutorials of Autodesk Maya.
+Alright so we will continue to ToolSeq Randomizer.
+This will be hopefully the last video of ToolSeq Randomizer and the last video of this tutorial series.
+Alright so we will talk about post-processing filters. Right now there is only one filter over here, pattern.
+There are seven patterns which can be used with tons of feasible permutations.
+C for Cumulative, (positive C, negative C), M for Mirror, (positive M, negative M), U for Unique, S for Same and D for Default.
+Alright, here is the simple rule, at first type one of these seven symbols to the pattern linebox over here.
+Then type a space character, after that type an integer number which will be the parameter of previous pattern symbol.
+That is it, you can repeat this cycle to create your inventive specialized pattern.
+So let's begin with a simple example, (U 25 S 25 D 25).
+Remember, patterns are post-process filters so they will take in place after all random values are calculated.
+Our first pattern Unique will leave next twenty five results untouched.
+Our second pattern Same will make next twenty five results equal by assigning first value of the block to rest twenty four values.
+Let's demonstrate what I mean.
+0123456789 -> 0000000000 (S 10)
+9876543210 -> 9999999999 (S 10)
+Default is almost similar to Same with one exception that assigns specified value in this floatbox over here instead of block's first one.
+This cycle will be repeated again and again and again until it reaches end of entire random values.
+Let's try this example. maya_cmds.move(0, 0, 0, _ITEMS, y=True)
+This command will zero out y axis values every single time before randomization so we don't have to undo again and again.
+In order to understand backend of patterns better, you may use Component Editor to see exact vertex positions for this example.
+Let's try with lower parameters like (U 4 S 5 D 16).
+Let's try with higher parameters like (U 40 S 10 D 120).
+Since orders are important in patterns, you may consider to use custom context menu buttons in the items panel.
+You can remember sort, natural, reverse and shuffle from one of our previous tutorials.
+Alright so let's move on, positive Cumulative will take current value and adds into next value.
+Then it will take this added value and adds into next value.
+Until it reaches count of cumulative parameter set in the pattern linebox right after cumulative symbol.
+One thing you should care about though, minimum and maximum limits will be certainly exceed after cumulative pattern.
+Let's demonstrate what I mean.
+111111 -> 123456 (+C 6)
+121212 -> 134679 (+C 6)
+Negative cumulative will do kinda same thing.
+Except its starting point is offset by cumulative parameter. Then it goes to opposite by adding next value to previous value.
+Let's demonstrate what I mean.
+111111 -> 654321 (-C 6)
+121212 -> 976431 (-C 6)
+Let's check it out. (U 90 D 500 +C 40 -C 40)
+Alright so let's move on, positive mirror will assign current value to its previous block counterpart.
+Then it will apply same to next values for creating a mirror like effect.
+Until it reaches count of mirror parameter set in the pattern linebox right after mirror symbol.
+Let's demonstrate what I mean.
+0123456789 -> 0123401234 (+M 5)
+9876543210 -> 9876598765 (+M 5)
+Negative mirror will do kinda same thing.
+Except its counterpart starts from nearest point and goes further as loop iterator progresses.
+Let's demonstrate what I mean.
+0123456789 -> 0123443210 (-M 5)
+9876543210 -> 9876556789 (-M 5)
+Let's check it out. (+M 1 -M 1 +M 12 -M 12 +M 1 -M 1)
+One last thing, you can change these seven symbols with any other letters if you desire.
+Thank you in advance for watching me and using ToolSeq which is my fantastic production.
+Thanks one more time for watching me until this split second, see you in other projects.
