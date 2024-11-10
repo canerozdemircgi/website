@@ -1,0 +1,75 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/text-justification/
+Text Justification
+Given an array of strings <u>words</u> and a width <u>maxWidth</u>, format the text such that each line has exactly <u>maxWidth</u> characters and is fully (left and right) justified.
+
+You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces <u>' '</u> when necessary so that each line has exactly <u>maxWidth</u> characters.
+
+Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line does not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.
+
+For the last line of text, it should be left-justified, and no extra space is inserted between words.
+
+<b>Note:</b>
+<ul>
+<li>A word is defined as a character sequence consisting of non-space characters only.</li>
+<li>Each word's length is guaranteed to be greater than <u>0</u> and not exceed <u>maxWidth</u>.</li>
+<li>The input array <u>words</u> contains at least one word.</li>
+</ul>
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= words.length <= 300</li>
+<li>1 <= words[i].length <= 20</li>
+<li>words[i] consists of only English letters and symbols.</li>
+<li>1 <= maxWidth <= 100</li>
+<li>words[i].length <= maxWidth</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16
+Output
+[
+	"This&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;&nbsp;&nbsp;&nbsp;an",
+	"example&nbsp;&nbsp;of text",
+	"justification.&nbsp;&nbsp;"
+]
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: words = ["What", "must", "be", "acknowledgment", "shall", "be"], maxWidth = 16
+Output
+[
+	"What&nbsp;&nbsp; must&nbsp;&nbsp; be",
+	"acknowledgment&nbsp;&nbsp;",
+	"shall be&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+]
+Explanation: Note that the last line is "shall be&nbsp;&nbsp;&nbsp;&nbsp;" instead of "shall&nbsp;&nbsp;&nbsp;&nbsp; be", because the last line must be left-justified instead of fully-justified.
+Note that the second line is also left-justified because it contains only one word.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: words = ["Science", "is", "what", "we", "understand", "well", "enough", "to", "explain", "to", "a", "computer.", "Art", "is", "everything", "else", "we", "do"], maxWidth = 20
+Output
+[
+	"Science&nbsp;&nbsp;is&nbsp;&nbsp;what we",
+	"understand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;well",
+	"enough to explain to",
+	"a&nbsp;&nbsp;computer.&nbsp;&nbsp;Art is",
+	"everything&nbsp;&nbsp;else&nbsp;&nbsp;we",
+	"do&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+]
+</fieldset-description>

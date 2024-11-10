@@ -1,0 +1,28 @@
+{
+	"videos":
+	[
+		{"title": "ToolSeq_Cameras", "identifier": "ZRQhLgjCFJw"},
+		{"title": "ToolSeq_Developer", "identifier": "sHS16G1iK9k"},
+		{"title": "ToolSeq_Displacement", "identifier": "q1T-37SLDvY"},
+		{"title": "ToolSeq_Distance", "identifier": "1BImsD3H090"},
+		{"title": "ToolSeq_Explode", "identifier": "HCAEFohebqA"},
+		{"title": "ToolSeq_Formula", "identifier": "hxWwVt0Tw6k"},
+		{"title": "ToolSeq_Freeze", "identifier": "S_HqXlY_lQc"},
+		{"title": "ToolSeq_ItemHud", "identifier": "ZAj5gxuGyas"},
+		{"title": "ToolSeq_Namer", "identifier": "kGA5Q3sZW0s"},
+		{"title": "ToolSeq_Pivot", "identifier": "EabJv6WMmeM"},
+		{"title": "ToolSeq_Randomizer - 1 (object mode)", "identifier": "d_apQiHADoA"},
+		{"title": "ToolSeq_Randomizer - 2 (component & interpolate mode)", "identifier": "UtYvEgZbkAI"},
+		{"title": "ToolSeq_Randomizer - 3 (select & material mode)", "identifier": "w6n2qcl44YE"},
+		{"title": "ToolSeq_Randomizer - 4 (command mode & presets)", "identifier": "g4QUxSAqOOw"},
+		{"title": "ToolSeq_Randomizer - 5 (color & replace mode)", "identifier": "ixdqZZsgTPI"},
+		{"title": "ToolSeq_Randomizer - 6 (functions of randomality)", "identifier": "ZstlL4OhVyU"},
+		{"title": "ToolSeq_Randomizer - 7 (function quantity)", "identifier": "RBNQQPGb4Xk"},
+		{"title": "ToolSeq_Randomizer - 8 (function options)", "identifier": "0QSz4nijfSs"},
+		{"title": "ToolSeq_Randomizer - 9 (Filters)", "identifier": "MygJT62EbCo"},
+		{"title": "ToolSeq_Select", "identifier": "ptsEvI5ibms"},
+		{"title": "ToolSeq_Unaverage", "identifier": "-jXO81TMihg"},
+		{"title": "ToolSeq_Uninstance", "identifier": "grukPt0UXSw"},
+		{"title": "ToolSeq_UV", "identifier": "mNdTUbiNHs8"}
+	]
+}
