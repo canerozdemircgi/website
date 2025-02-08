@@ -1,0 +1,45 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/implement-trie-prefix-tree/
+Implement Trie (Prefix Tree)
+A <b>trie</b> (pronounced as "try") or <b>prefix tree</b> is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
+
+Implement the Trie class
+
+<ul>
+<li><u>Trie()</u> Initializes the trie object.</li>
+<li><u>void insert(String word)</u> Inserts the string <u>word</u> into the trie.</li>
+<li><u>boolean search(String word)</u> Returns <u>true</u> if the string <u>word</u> is in the trie (i.e., was inserted before), and <u>false</u> otherwise.</li>
+<li><u>boolean startsWith(String prefix)</u> Returns <u>true</u> if there is a previously inserted string <u>word</u> that has the <u>prefix</u>, and <u>false</u> otherwise.</li>
+</ul>
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= word.length, prefix.length <= 2000</li>
+<li>word and prefix consist only of lowercase English letters.</li>
+<li>At most 3 * 10<sup>4</sup> calls in total will be made to insert, search, and startsWith.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input
+["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
+[[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
+Output
+[null, null, true, false, true, null, true]
+
+Explanation
+Trie trie = new Trie();
+trie.insert("apple");
+trie.search("apple"); // return True
+trie.search("app"); // return False
+trie.startsWith("app"); // return True
+trie.insert("app");
+trie.search("app"); // return True
+</fieldset-description>
