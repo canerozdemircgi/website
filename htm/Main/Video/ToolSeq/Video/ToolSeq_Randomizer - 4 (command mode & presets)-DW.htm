@@ -1,0 +1,41 @@
+Welcome to the ToolSeq tutorials of Autodesk Maya.
+Alright so we will continue to ToolSeq Randomizer.
+Let us deal with command mode.
+In this mode, items panel will accept any kind of component selections like vertex, edge, face, uv, transform so on and so forth.
+Internals panel accepts python commands. You can left-click on the Commands label to get last executed mel command quickly.
+You have to convert it to python equivalent though. To do this you should use maya_cmds namespace.
+There is a custom context menu button for command mode only in internals panel that you can benefit to quickly append this namespace.
+There are two more buttons over here, ITEM is a string list variable holding names of items in current iteration.
+RANDOM.Get is a method returns a random float value calculated internally based on your configuration in current iteration.
+You probably have to use both of item string and random float in a maya command to get a proper result.
+Click on the Randomize button to see results.
+Same items Set rule for object mode is also valid for command mode.
+Therefore don't forget that ITEM variable can keep multiple names as a list which is separated with spaces in an iteration.
+Click on the Randomize button to see results.
+There is no internal set because internals are custom commands in this mode.
+Besides you can write its own code that will assign same value to different parameters.
+There is a preset tab over here which contains several configurations in command mode.
+These presets are based on default preset so you have to switch default before switching any other preset properly.
+Let's test them one by one pretty quickly.
+Bevel is for transforms and is not applicable for component levels like faces, edges, etc if they are not appended as a whole set.
+Because it changes component ids so next iteration becomes non-deterministic.
+Alright so let's try bevel.
+Chamfer is applicable for vertices as you can confirm in Edit Mesh menu.
+You will realize that there is a post-commands panel over here.
+You will get more detailed informations about post-commands in one of the future videos.
+Alright so let's try chamfer.
+Extrude Vertex, Extrude Edge and Extrude Face buttons, as their name points out, are applicable for vertices, edges and faces.
+Alright so let's try extrude.
+Paint Gray, RGB, HSV, HSL buttons are applicable for vertices, faces, vertex faces and transforms.
+They are vertex painting commands which have grayscale, red-green-blue, hue-saturation-value, hue-saturation-lightness color models.
+The latter three have three random functions which represent channels of rgb, hsv, or hsl separately.
+You will get more detailed informations about sequential functions in one of the future videos.
+Values are interpolated from zero to one. For example in red channel, zero means zero, one hundred twenty eight means zero dot five and two hundred fifty five means one.
+You will realize that there is a pre-commands panel over here.
+You will get more detailed informations about pre-commands in one of the future videos.
+Alright so let's try paint.
+Wire presets are similar to paint, applicable to objects and will override wireframe color attribute of objects.
+Alright so let's try wire.
+Same items Set rule for command mode is also valid for presets.
+Remember to switch default when you are done to reset randomizer configuration.
+Thanks for watching me, see you in the next video.

@@ -1,0 +1,47 @@
+<span-description class='f_sans'>
+https://www.lintcode.com/problem/892/
+Alien Dictionary
+There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you.
+
+You receive a list of <b>non-empty</b> words from the dictionary, where words are <b>sorted lexicographically by the rules of this new language</b>.
+
+Derive the order of letters in this language.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>You may assume all letters are in lowercase.</li>
+<li>The dictionary is invalid, if string a is prefix of string b and b is appear before a.</li>
+<li>If the order is invalid, return an empty string.</li>
+<li>There may be multiple valid order of letters, return the smallest in normal lexicographical order.</li>
+<li>The letters in one string are of the same rank by default and are sorted in Human dictionary order.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input：["wrt", "wrf", "er", "ett", "rftt"]
+Output："wertf"
+Explanation：
+we can get 't'<'f' from "wrt" and "wrf"
+we can get 'w'<'e' from "wrt" and "er"
+we can get 'r'<'t' from "er" and "ett"
+we can get 'e'<'r' from "ett" and "rftt"
+So return "wertf"
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input：["z", "x"]
+Output："zx"
+Explanation：
+we can get 'z'<'x' from "z" and "x"
+So return "zx"
+</fieldset-description>
