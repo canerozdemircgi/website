@@ -1,0 +1,44 @@
+title-top
+{
+	visibility: hidden;
+
+	display: flex;
+	flex-wrap: wrap;
+	white-space: pre;
+}
+
+.title-top-real
+{
+	z-index: -1;
+	position: absolute;
+	width: max-content;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title-top-char
+{
+	font-size: 160%;
+	font-weight: 500;
+	letter-spacing: 0.25px;
+
+	color: var(--border-color);
+
+	transition:
+		color 0.5s linear,
+		filter 0.5s linear;
+}
+
+.title-top-char-light
+{
+	color: var(--foreground-color);
+	filter:
+		drop-shadow(0 0 2px var(--neon-title-color))
+		drop-shadow(0 0 4px var(--neon-title-color))
+		drop-shadow(0 0 12px var(--neon-title-color));
+
+	transition:
+		color 0.5s linear,
+		filter 0.5s linear;
+}

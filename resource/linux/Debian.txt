@@ -1,0 +1,103 @@
+<< Change root Password >>
+sudo passwd root
+
+<< Search Package >>
+apt search xxx
+
+<< Check Package Status >>
+apt policy xxx
+
+<< Install Package >>
+apt install --yes xxx
+
+<< Remove Package With Unneeded Dependent Packages >>
+apt autoremove --purge xxx
+
+<< Update Package Indexes >>
+apt update
+
+<< Update Packages >>
+apt full-upgrade
+
+<< systemctl reload >>
+systemctl daemon-reload
+
+<< Zero Remaining Disk >>
+dd if=/dev/zero of=wipefile; sync; rm wipefile
+
+----------------------------------------------------------------
+
+apt install --yes vim
+
+-- Local Only
+----------------------------------------------------------------
+vim /etc/network/interfaces
+^^ iface ens33 inet dhcp >> iface ens33 inet static
+^^ address 192.168.1.254
+^^ netmask 255.255.255.0
+^^ gateway 192.168.1.1
+^^ dns-nameservers 127.0.0.1
+
+ip addr
+----------------------------------------------------------------
+
+vim /etc/ssh/sshd_config
+^^ PermitRootLogin yes
+systemctl restart sshd
+systemctl status sshd
+
+vim /etc/profile
+^^ alias ll='ls -lart'
+source /etc/profile
+
+apt install --yes nginx
+systemctl status nginx
+vim /etc/nginx/sites-available/default
+^^ location ~\.(pgpass|pass|pem|ppk)$ { deny all; }
+^^ location /Java { proxy_pass http://localhost:4567; }
+^^ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+systemctl restart nginx
+systemctl status nginx
+
+-- Remote Only
+----------------------------------------------------------------
+apt install --yes python3-certbot-nginx
+vim /etc/nginx/sites-available/default
+^^ server_name canerozdemir.website www.canerozdemir.website;
+nginx -t
+systemctl reload nginx
+systemctl status nginx
+certbot --nginx -d canerozdemir.website -d www.canerozdemir.website
+----------------------------------------------------------------
+
+apt install --yes default-jre-headless
+java -version
+
+apt install --yes postgresql postgresql-client
+systemctl status postgresql
+su - postgres
+vim /etc/postgresql/13/main/pg_hba.conf
+^^ md5 >> scram-sha-256
+^^ host caner_ozdemir__db caner_ozdemir 0.0.0.0/0 scram-sha-256
+vim /etc/postgresql/13/main/postgresql.conf
+^^ listen_addresses = '*'
+^^ password_encryption = scram-sha-256
+exit
+systemctl restart postgresql
+systemctl status postgresql
+su - postgres
+createdb caner_ozdemir__db
+createuser --interactive --pwprompt
+^^ caner_ozdemir xxx xxx n n n
+exit
+systemctl restart postgresql
+systemctl status postgresql
+
+## sql commands
+
+## scp copy
+sh /var/www/html/java/bin/canerozdemircgi.service-link.sh
+## scp copy - keys
+systemctl start canerozdemircgi
+systemctl status canerozdemircgi
+systemctl enable canerozdemircgi

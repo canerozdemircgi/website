@@ -1,0 +1,73 @@
+button-path
+{
+	display: none;
+}
+
+.button-path
+{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+
+	background-color: var(--button-color);
+	border-radius: 4px 20px 20px 4px;
+}
+
+.button-path:last-child
+{
+	background-color: var(--button-active-color);
+}
+
+.button-path:hover
+{
+	backdrop-filter: invert(100%);
+	color: var(--background-color);
+}
+
+@supports not (backdrop-filter: invert(100%))
+{
+	.button-path:hover
+	{
+		background-color: var(--foreground-color);
+	}
+}
+
+.button-path:last-child:hover
+{
+	backdrop-filter: none;
+
+	background-color: var(--button-active-color);
+	color: var(--foreground-color);
+}
+
+.button-path-image-right
+{
+	display: flex;
+	margin-left: auto;
+
+	fill: var(--foreground-color);
+	transition: rotate 0.5s linear;
+}
+
+.button-path:hover > .button-path-image-right
+{
+	fill: var(--background-color);
+	rotate: 90deg;
+}
+
+.button-path-image-left
+{
+	margin-right: 10px;
+	fill: var(--foreground-color);
+}
+
+.button-path:hover > .button-path-image-left
+{
+	fill: var(--background-color);
+}
+
+.button-path:last-child:hover > .button-path-image-left,
+.button-path:last-child:hover > .button-path-image-right
+{
+	fill: var(--foreground-color);
+}

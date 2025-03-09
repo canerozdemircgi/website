@@ -1,0 +1,19 @@
+Welcome to the ToolSeq tutorials of Autodesk Maya.
+Alright so ToolSeq Displacement is a nice tool that moves vertices based on bump maps, height maps, displacement maps so on and so forth.
+That means you must have a proper map for this operation. Its type could be popular image formats like bmp, jpg, png, svg, tga, tif, so on and so forth.
+Click on the button with three dots to write image file name into its own LineBox.
+I prepared an example image here for this purpose.
+Now select any polygonal object and click on the Shape label to write into its own LineBox.
+However there is one thing you should care about. The polygonal object must have high number of vertices to fit better.
+The core algorithm of displacement is implemented using OpenMaya so it will handle millions of vertices mostly in a few seconds.
+There are four axises that can be moved. World axises are X, Y and Z.
+There is also one more for Normal axis of vertices.
+This N axis is probably what you need coz it is suitable for all objects. It can move X, Y and Z together depending on the normal vector.
+Then you can select Red, Green, Blue or Alpha channels of specified image.
+Those float numbers are minimum and maximum limits of moving.
+A pure black pixel will be moved by limit on the left over here and a pure white pixel will be moved by limit on the right over here.
+Last but not least, type the UV name in its LineBox coz matching process needs uvs, its names are generally like map1 or uvSet1.
+Now let us click on the Apply button to see results.
+I prepared another picture for the sake of this tutorial which has different grayscale images in different layers. Let me show you.
+Now let us try a few combinations.
+Thanks for watching me, see you in the next video.

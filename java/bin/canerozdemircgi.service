@@ -1,0 +1,10 @@
+[Unit]
+Description=canerozdemircgi service
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/html/java/bin
+ExecStart=sh canerozdemircgi.sh
+
+[Install]
+WantedBy=multi-user.target

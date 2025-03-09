@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<Configuration status='INFO'>
+
+	<Properties>
+		<Property name='fileError'>log/1_error.log</Property>
+		<Property name='fileError_Archive'>log/archive/1_error_%date{yyyy-MM-dd}-%i.log.gz</Property>
+
+		<Property name='fileWarn'>log/2_warn.log</Property>
+		<Property name='fileWarn_Archive'>log/archive/2_warn_%date{yyyy-MM-dd}-%i.log.gz</Property>
+
+		<Property name='fileInfo'>log/3_info.log</Property>
+		<Property name='fileInfo_Archive'>log/archive/3_info_%date{yyyy-MM-dd}-%i.log.gz</Property>
+
+		<Property name='fileInfoJournal'>log/3_info-journal.log</Property>
+		<Property name='fileInfoJournal_Archive'>log/archive/3_info-journal_%date{yyyy-MM-dd}-%i.log.gz</Property>
+
+		<Property name='fileDebug'>log/4_debug.log</Property>
+		<Property name='fileDebug_Archive'>log/archive/4_debug_%date{yyyy-MM-dd}-%i.log.gz</Property>
+
+		<Property name='patternLog'>[%level] [%date{yyyy-MM-dd HH:mm:ss}] [%logger] [%file:%line] - [%message]\n</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name='console' target='SYSTEM_OUT'>
+			<PatternLayout pattern='${patternLog}'/>
+		</Console>
+		<RollingRandomAccessFile name='fileError' fileName='${fileError}' filePattern='${fileError_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<SizeBasedTriggeringPolicy size='16 MB'/>
+			</Policies>
+		</RollingRandomAccessFile>
+		<RollingRandomAccessFile name='fileWarn' fileName='${fileWarn}' filePattern='${fileWarn_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<SizeBasedTriggeringPolicy size='16 MB'/>
+			</Policies>
+			<Filters>
+				<ThresholdFilter level='ERROR' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='WARN' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+		<RollingRandomAccessFile name='fileInfo' fileName='${fileInfo}' filePattern='${fileInfo_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<SizeBasedTriggeringPolicy size='16 MB'/>
+			</Policies>
+			<Filters>
+				<ThresholdFilter level='WARN' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='INFO' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+		<RollingRandomAccessFile name='fileInfoJournal' fileName='${fileInfoJournal}' filePattern='${fileInfoJournal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<SizeBasedTriggeringPolicy size='16 MB'/>
+			</Policies>
+			<Filters>
+				<ThresholdFilter level='WARN' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='INFO' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+		<RollingRandomAccessFile name='fileDebug' fileName='${fileDebug}' filePattern='${fileDebug_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<SizeBasedTriggeringPolicy size='16 MB'/>
+			</Policies>
+			<Filters>
+				<ThresholdFilter level='INFO' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='DEBUG' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+	</Appenders>
+
+	<Loggers>
+		<Logger name='CanerOzdemirCgi_Journal' additivity='false'>
+			<AppenderRef ref='fileInfoJournal'/>
+		</Logger>
+		<Root level='INFO'>
+			<AppenderRef ref='console' level='OFF'/>
+			<AppenderRef ref='fileError' level='ERROR'/>
+			<AppenderRef ref='fileWarn' level='WARN'/>
+			<AppenderRef ref='fileInfo' level='INFO'/>
+			<!-- <AppenderRef ref='fileDebug' level='DEBUG'/> -->
+		</Root>
+	</Loggers>
+
+</Configuration>

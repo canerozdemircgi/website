@@ -1,0 +1,25 @@
+footer-single
+{
+	font-size: 93.75%;
+
+	padding: 20px 20px 0 20px;
+	text-align: center;
+
+	border: 2px solid var(--border-color);
+	border-bottom-width: 0;
+	border-radius: 8px 8px 0 0;
+}
+
+.footer_single_sign
+{
+	font-family: 'Roboto Mono', monospace;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
+
+.footer_single_sign > span
+{
+	display: inline-block;
+	min-width: 9px;
+	max-width: 9px;
+}
