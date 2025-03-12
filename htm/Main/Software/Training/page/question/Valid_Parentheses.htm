@@ -1,0 +1,83 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/valid-parentheses/
+Valid Parentheses
+Given a string <u>s</u> containing just the characters <u>'('</u>, <u>')'</u>, <u>'{'</u>, <u>'}'</u>, <u>'['</u> and <u>']'</u>, determine if the input string is valid.
+
+An input string is valid if
+<ul>
+<li>Open brackets must be closed by the same type of brackets.</li>
+<li>Open brackets must be closed in the correct order.</li>
+</ul>
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= s.length <= 10<sup>4</sup></li>
+<li>s consists of parentheses only '()[]{}'.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: s = "()"
+Output: true
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: s = "()[]{}"
+Output: true
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: s = "(]"
+Output: false
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+An interesting property about a valid parenthesis expression is that a sub-expression of a valid expression should also be a valid expression. (Not every sub-expression) e.g.
+{ { } [ ] [ [ [ ] ] ] } is VALID expression
+[ [ [ ] ] ] is VALID sub-expression
+{ } [ ] is VALID sub-expression
+Can we exploit this recursive structure somehow?
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+What if whenever we encounter a matching pair of parenthesis in the expression, we simply remove it from the expression? This would keep on shortening the expression. e.g.
+{ { ( { } ) } }
+______|_|______
+
+{ { (......) } }
+____|______|____
+
+{ {..........} }
+__|__________|__
+
+{................}
+|________________|
+
+VALID EXPRESSION!
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 3
+The stack data structure can come in handy here in representing this recursive structure of the problem. We can't really process this from the inside out because we don't have an idea about the overall structure. But, the stack can help us process this recursively i.e. from outside to inwards.
+</fieldset-description>

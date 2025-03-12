@@ -1,0 +1,80 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+Find Minimum in Rotated Sorted Array
+Suppose an array of length <u>n</u> sorted in ascending order is <b>rotated</b> between <u>1</u> and <u>n</u> times. For example, the array <u>nums = [0, 1, 2, 4, 5, 6, 7]</u> might become
+
+<ul>
+<li><u>[4, 5, 6, 7, 0, 1, 2]</u> if it was rotated <u>4</u> times.</li>
+<li><u>[0, 1, 2, 4, 5, 6, 7]</u> if it was rotated <u>7</u> times.</li>
+</ul>
+
+Notice that <b>rotating</b> an array <u>[a[0], a[1], a[2], ..., a[n-1]]</u> 1 time results in the array <u>[a[n-1], a[0], a[1], a[2], ..., a[n-2]]</u>.
+
+Given the sorted rotated array <u>nums</u> of <b>unique</b> elements, return the minimum element of this array.
+
+You must write an algorithm that runs in <u>O(log n)</u> time.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>n == nums.length</li>
+<li>1 <= n <= 5000</li>
+<li>-5000 <= nums[i] <= 5000</li>
+<li>All the integers of nums are unique.</li>
+<li>nums is sorted and rotated between 1 and n times.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: nums = [3, 4, 5, 1, 2]
+Output: 1
+Explanation: The original array was [1, 2, 3, 4, 5] rotated 3 times.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: nums = [4, 5, 6, 7, 0, 1, 2]
+Output: 0
+Explanation: The original array was [0, 1, 2, 4, 5, 6, 7] and it was rotated 4 times.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: nums = [11, 13, 15, 17]
+Output: 11
+Explanation: The original array was [11, 13, 15, 17] and it was rotated 4 times.
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+Array was originally in ascending order. Now that the array is rotated, there would be a point in the array where there is a small deflection from the increasing sequence. eg. The array would be something like [4, 5, 6, 7, 0, 1, 2].
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+You can divide the search space into two and see which direction to go. Can you think of an algorithm which has O(logN) search complexity?
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 3
+<ul>
+<li>All the elements to the left of inflection point > first element of the array.</li>
+<li>All the elements to the right of inflection point < first element of the array.</li>
+</ul>
+</fieldset-description>

@@ -1,0 +1,23 @@
+Welcome to the ToolSeq tutorials of Autodesk Maya.
+Alright so ToolSeq Formula allows you to manipulate shapes based on equations whichever supported by the python language.
+Select any polygonal object and click on the Shape label to write into its own LineBox.
+The core algorithm of formula is implemented using OpenMaya so it will handle millions of vertices mostly in a few seconds.
+There are two text panels as you will realize, their sizes can be changed by the splitter over here.
+The top one is for commands which will be evaluated only once before everything else.
+This is useful for things like importing statements or defining functions coz they don't need to run in every single iteration again.
+The bottom one is for equations which will be evaluated at every single iteration, these iterations are based on vertices.
+There are variables to be used in reading and writing, boths are initially x, y and z.
+You must assign at least one of writeables to get a meaningful result, of course.
+There are a few examples you can examine. Just select any example from the combobox and click on the Fill button to load its configuration.
+Finally there are two additional checkboxes over here.
+Secure option provides that if an error happens in an iteration, just bypass and continue to next iteration.
+So you can skip mathematical exceptions like division by zero, negative exponent so on and so forth.
+Normal variable option adds three more variables that could be used in reading. You can see them over here, xn yn and zn.
+These are normal vectors of current vertex separated in world axises.
+These vectors are normalized so their minimum value is zero and maximum value is one, just keep in mind.
+Alright so let us click on the Formulate button to see results of a few examples pretty quickly.
+4
+-- 05 You can realize secure option is enabled here to bypass negative exponent error.
+7, 8, 9, 10, 11, 12, 13, 14, 15
+-- 16 You can realize normal variable option is enabled here coz xn, yn and zn variables are used in the equation.
+Thanks for watching me, see you in the next video.

@@ -1,0 +1,40 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/insert-interval/
+Insert Interval
+You are given an array of non-overlapping <u>intervals</u> where <u>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</u> represent the start and the end of the <u>i<sup>th</sup></u> interval and <u>intervals</u> is sorted in ascending order by <u>start<sub>i</sub></u>. You are also given an interval <u>newInterval = [start, end]</u> that represents the start and end of another interval.
+
+Insert <u>newInterval</u> into <u>intervals</u> such that <u>intervals</u> is still sorted in ascending order by <u>start<sub>i</sub></u> and <u>intervals</u> still does not have any overlapping intervals (merge overlapping intervals if necessary).
+
+Return <u>intervals</u> after the insertion.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>0 <= intervals.length <= 10<sup>4</sup></li>
+<li>intervals[i].length == 2</li>
+<li>0 <= start<sub>i</sub> <= end<sub>i</sub> <= 10<sup>5</sup></li>
+<li>intervals is sorted by start<sub>i</sub> in ascending order.</li>
+<li>newInterval.length == 2</li>
+<li>0 <= start <= end <= 10<sup>5</sup></li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: intervals = [[1, 3], [6, 9]], newInterval = [2, 5]
+Output: [[1, 5], [6, 9]]
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: intervals = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], newInterval = [4, 8]
+Output: [[1, 2], [3, 10], [12, 16]]
+Explanation: Because the new interval [4, 8] overlaps with [3, 5], [6, 7], [8, 10].
+</fieldset-description>
