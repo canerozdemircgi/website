@@ -1,0 +1,46 @@
+.span-description-up,
+.span-description-dw
+{
+	font-family: 'Roboto Serif', serif;
+	font-weight: 425;
+	line-height: 1.5;
+
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	white-space: pre-line;
+
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+
+	padding: 10px;
+	overflow: hidden;
+}
+
+.span-description-up::before,
+.span-description-dw::before
+{
+	content: '';
+	display: block;
+
+	margin-top: -4px;
+}
+
+.span-description-up::after,
+.span-description-dw::after
+{
+	content: '';
+	display: block;
+
+	margin-bottom: -4px;
+}
+
+.span-description-up
+{
+	border-radius: 4px 4px 0 0;
+}
+
+.span-description-dw
+{
+	border-radius: 0 0 4px 4px;
+}

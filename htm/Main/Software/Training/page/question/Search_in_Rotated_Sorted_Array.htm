@@ -1,0 +1,48 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+Search in Rotated Sorted Array
+There is an integer array <u>nums</u> sorted in ascending order (with <b>distinct</b> values).
+
+Prior to being passed to your function, <u>nums</u> is <b>possibly rotated</b> at an unknown pivot index <u>k (1 <= k < nums.length)</u> such that the resulting array is <u>[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]</u> <b>(0-indexed)</b>. For example, <u>[0, 1, 2, 4, 5, 6, 7]</u> might be rotated at pivot index <u>3</u> and become <u>[4, 5, 6, 7, 0, 1, 2]</u>.
+
+Given the array <u>nums</u> <b>after</b> the possible rotation and an integer <u>target</u>, return the index of <u>target</u> if it is in <u>nums</u>, or <u>-1</u> if it is not in <u>nums</u>.
+
+You must write an algorithm with <u>O(log n)</u> runtime complexity.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= nums.length <= 5000</li>
+<li>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></li>
+<li>All values of nums are unique.</li>
+<li>nums is an ascending array that is possibly rotated.</li>
+<li>-10<sup>4</sup> <= target <= 10<sup>4</sup></li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: nums = [4, 5, 6, 7, 0, 1, 2], target = 0
+Output: 4
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: nums = [4, 5, 6, 7, 0, 1, 2], target = 3
+Output: -1
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: nums = [1], target = 0
+Output: -1
+</fieldset-description>

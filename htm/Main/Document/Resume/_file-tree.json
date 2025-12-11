@@ -1,0 +1,32 @@
+{
+	"downloads":
+	[
+		{
+			"label": "Resume<div class='br05'></div>",
+			"label_post": "Standard<div class='br05'></div>[ Format: <span class='format'>pdf</span> ]<div class='br10'></div>",
+			"url": "https://drive.google.com/file/d/1-7G6ZPwWocjZEKF8nfbCvezlPLBHCK0w/view?usp=sharing"
+		},
+		{
+			"label": "Resume<div class='br05'></div>",
+			"label_post": "Standard<div class='br05'></div>[ Format: <span class='format'>html</span> ]<div class='br20'></div>",
+			"url": "https://canerozdemircgi.github.io/Resume/index.html?path=resume"
+		},
+
+		{
+			"label": "Resume<div class='br05'></div>",
+			"label_post": "Outsource<div class='br05'></div>[ Format: <span class='format'>pdf</span> ]<div class='br10'></div>",
+			"url": "https://drive.google.com/file/d/1oS1BLJdC6nVNZ0mVJ5RvX4H9uUkJ_K7y/view?usp=drive_link"
+		},
+		{
+			"label": "Resume<div class='br05'></div>",
+			"label_post": "Outsource<div class='br05'></div>[ Format: <span class='format'>html</span> ]<div class='br20'></div>",
+			"url": "https://canerozdemircgi.github.io/Resume/index.html?path=resume&outsource"
+		},
+
+		{
+			"label": "Resume<div class='br05'></div>",
+			"label_post": "Development<div class='br05'></div>[ <span class='format'>Source Code</span> ]",
+			"url": "https://github.com/canerozdemircgi/Resume"
+		}
+	]
+}

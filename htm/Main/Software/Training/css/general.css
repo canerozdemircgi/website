@@ -1,0 +1,42 @@
+:root
+{
+	--background-color: #0f0f0f;
+	--foreground-color: #f0f0f0;
+	--border-out-color: #808080;
+
+	--selection-color: #f0f080;
+	--selection-image-color: #f0f08044;
+}
+
+*
+{
+	box-sizing: border-box;
+	max-height: 999999px;
+	font: inherit;
+	letter-spacing: 0.125px;
+
+	text-rendering: geometricPrecision;
+	shape-rendering: geometricPrecision;
+}
+
+body
+{
+	line-height: 1;
+
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+}
+
+::selection
+{
+	background-color: var(--selection-color);
+	color: var(--background-color);
+}
+
+img::selection
+{
+	background-color: var(--selection-image-color);
+}
