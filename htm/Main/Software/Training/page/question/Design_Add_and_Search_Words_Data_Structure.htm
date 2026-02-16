@@ -1,0 +1,54 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/design-add-and-search-words-data-structure/
+Design Add and Search Words Data Structure
+Design a data structure that supports adding new words and finding if a string matches any previously added string.
+
+Implement the <u>WordDictionary</u> class
+
+<ul>
+<li><u>WordDictionary()</u> Initializes the object.</li>
+<li><u>void addWord(word)</u> Adds <u>word</u> to the data structure, it can be matched later.</li>
+<li><u>bool search(word)</u> Returns <u>true</u> if there is any string in the data structure that matches <u>word</u> or <u>false</u> otherwise. <u>word</u> may contain dots <u>'.'</u> where dots can be matched with any letter.</li>
+</ul>
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= word.length <= 25</li>
+<li>word in addWord consists of lowercase English letters.</li>
+<li>word in search consist of '.' or lowercase English letters.</li>
+<li>There will be at most 3 dots in word for search queries.</li>
+<li>At most 10<sup>4</sup> calls will be made to addWord and search.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input
+["WordDictionary", "addWord", "addWord", "addWord", "search", "search", "search", "search"]
+[[], ["bad"], ["dad"], ["mad"], ["pad"], ["bad"], [".ad"], ["b.."]]
+Output
+[null, null, null, null, false, true, true, true]
+
+Explanation
+WordDictionary wordDictionary = new WordDictionary();
+wordDictionary.addWord("bad");
+wordDictionary.addWord("dad");
+wordDictionary.addWord("mad");
+wordDictionary.search("pad"); // return False
+wordDictionary.search("bad"); // return True
+wordDictionary.search(".ad"); // return True
+wordDictionary.search("b.."); // return True
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.
+</fieldset-description>

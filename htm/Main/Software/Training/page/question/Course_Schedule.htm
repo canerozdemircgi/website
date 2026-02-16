@@ -1,0 +1,65 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/course-schedule/
+Course Schedule
+There are a total of <u>numCourses</u> courses you have to take, labeled from <u>0</u> to <u>numCourses - 1</u>. You are given an array <u>prerequisites</u> where <u>prerequisites[i] = [a<sub>i</sub>, b<sub>i</sub>]</u> indicates that you <b>must</b> take course <u>b<sub>i</sub></u> first if you want to take course <u>a<sub>i</sub></u>.
+
+<ul>
+<li>For example, the pair <u>[0, 1]</u>, indicates that to take course <u>0</u> you have to first take course <u>1</u>.</li>
+</ul>
+
+Return <u>true</u> if you can finish all courses. Otherwise, return <u>false</u>.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>1 <= numCourses <= 2000</li>
+<li>0 <= prerequisites.length <= 5000</li>
+<li>prerequisites[i].length == 2</li>
+<li>0 <= a<sub>i</sub>, b<sub>i</sub> < numCourses</li>
+<li>All the pairs prerequisites[i] are unique.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: numCourses = 2, prerequisites = [[1, 0]]
+Output: true
+Explanation: There are a total of 2 courses to take.
+To take course 1 you should have finished course 0. So it is possible.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: numCourses = 2, prerequisites = [[1, 0], [0, 1]]
+Output: false
+Explanation: There are a total of 2 courses to take.
+To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 3
+Topological sort could also be done via BFS.
+</fieldset-description>

@@ -1,0 +1,65 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/subtree-of-another-tree/
+Subtree of Another Tree
+Given the roots of two binary trees <u>root</u> and <u>subRoot</u>, return <u>true</u> if there is a subtree of <u>root</u> with the same structure and node values of <u>subRoot</u> and <u>false</u> otherwise.
+
+A subtree of a binary <u>tree</u> is a tree that consists of a node in <u>tree</u> and all of this node's descendants. The <u>tree</u> could also be considered as a subtree of itself.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>The number of nodes in the root tree is in the range [1, 2000].</li>
+<li>The number of nodes in the subRoot tree is in the range [1, 1000].</li>
+<li>-10<sup>4</sup> <= root.val <= 10<sup>4</sup></li>
+<li>-10<sup>4</sup> <= subRoot.val <= 10<sup>4</sup></li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+<href-image src='page/question/Subtree_of_Another_Tree/1.jpg' style='width: 532px;'></href-image>
+Input: root = [3, 4, 5, 1, 2], subRoot = [4, 1, 2]
+Output: true
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+<href-image src='page/question/Subtree_of_Another_Tree/2.jpg' style='width: 502px;'></href-image>
+Input: root = [3, 4, 5, 1, 2, null, null, null, null, 0], subRoot = [4, 1, 2]
+Output: false
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_sans'>
+Hint 1
+Which approach is better here- recursive or iterative?
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 2
+If recursive approach is better, can you write recursive function with its parameters?
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 3
+Two trees s and t are said to be identical if their root values are same and their left and right subtrees are identical. Can you write this in form of recursive formulae?
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_sans'>
+Hint 4
+Recursive formulae can be: isIdentical(s, t)= s.val==t.val AND isIdentical(s.left, t.left) AND isIdentical(s.right, t.right)
+</fieldset-description>

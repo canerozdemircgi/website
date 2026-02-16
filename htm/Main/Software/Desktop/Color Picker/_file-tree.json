@@ -1,0 +1,33 @@
+{
+	"downloads":
+	[
+		{
+			"label": "License: GPLv3+<div class='br05'></div>",
+			"label_post": "Version: <span id='version_content' class='version'>x.x.xx</span><div class='br20'></div>",
+			"url": "https://www.gnu.org/licenses/gpl-3.0-standalone.html",
+			"url_type": "caution"
+		},
+		{
+			"label": "GitHub<div class='br05'></div>",
+			"label_post": "[ Binary &#38; Source Code ]<div class='br20'></div>",
+			"url": "https://github.com/canerozdemircgi/Color-Picker/releases"
+		},
+		{
+			"label": "ArtStation",
+			"url": "https://www.artstation.com/artwork/v2wLyA"
+		},
+		{
+			"label": "Softpedia",
+			"url": "https://www.softpedia.com/get/Internet/WEB-Design/Web-Design-related/Color-Picker-UD.shtml"
+		},
+		{
+			"label": "AlternativeTo",
+			"url": "https://alternativeto.net/software/colorpicker-by-canerozdemircgi/"
+		}
+	],
+	"images":
+	[
+		"Color_Picker_Professional_Mode.png",
+		"Color_Picker_Simple_Mode.png"
+	]
+}

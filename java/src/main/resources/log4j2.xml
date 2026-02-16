@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Configuration strict='true'>
+
+	<Properties>
+
+		<Property name='folderRoot'>log</Property>
+		<Property name='folderArchive'>${folderRoot}/archive</Property>
+		<Property name='suffixArchive'>%date{yyyy-MM-dd}-%i</Property>
+		<Property name='patternLog'>[%level] [%thread] [%date{yyyy-MM-dd HH:mm:ss.SSS}] [%logger] [%class:%method:%line] - [%message]\n</Property>
+
+		<Property name='fileNameFatal'>${folderRoot}/0_fatal.log</Property>
+		<Property name='fileNameFatal_Archive'>${folderArchive}/0_fatal_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameFatalJournal'>${folderRoot}/0_fatal-journal.log</Property>
+		<Property name='fileNameFatalJournal_Archive'>${folderArchive}/0_fatal-journal_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameError'>${folderRoot}/1_error.log</Property>
+		<Property name='fileNameError_Archive'>${folderArchive}/1_error_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameErrorJournal'>${folderRoot}/1_error-journal.log</Property>
+		<Property name='fileNameErrorJournal_Archive'>${folderArchive}/1_error-journal_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameWarn'>${folderRoot}/2_warn.log</Property>
+		<Property name='fileNameWarn_Archive'>${folderArchive}/2_warn_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameWarnJournal'>${folderRoot}/2_warn-journal.log</Property>
+		<Property name='fileNameWarnJournal_Archive'>${folderArchive}/2_warn-journal_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameInfo'>${folderRoot}/3_info.log</Property>
+		<Property name='fileNameInfo_Archive'>${folderArchive}/3_info_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameInfoJournal'>${folderRoot}/3_info-journal.log</Property>
+		<Property name='fileNameInfoJournal_Archive'>${folderArchive}/3_info-journal_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameDebug'>${folderRoot}/4_debug.log</Property>
+		<Property name='fileNameDebug_Archive'>${folderArchive}/4_debug_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameDebugJournal'>${folderRoot}/4_debug-journal.log</Property>
+		<Property name='fileNameDebugJournal_Archive'>${folderArchive}/4_debug-journal_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameTrace'>${folderRoot}/5_trace.log</Property>
+		<Property name='fileNameTrace_Archive'>${folderArchive}/5_trace_${suffixArchive}.log.gz</Property>
+
+		<Property name='fileNameTraceJournal'>${folderRoot}/5_trace-journal.log</Property>
+		<Property name='fileNameTraceJournal_Archive'>${folderArchive}/5_trace-journal_${suffixArchive}.log.gz</Property>
+
+	</Properties>
+
+	<Appenders>
+
+		<Console name='console' target='SYSTEM_OUT'>
+			<PatternLayout pattern='${patternLog}'/>
+		</Console>
+
+		<RollingRandomAccessFile name='fileFatal' fileName='${fileNameFatal}' filePattern='${fileNameFatal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='FATAL' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileFatalJournal' fileName='${fileNameFatalJournal}' filePattern='${fileNameFatalJournal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='FATAL' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileError' fileName='${fileNameError}' filePattern='${fileNameError_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='FATAL' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='ERROR' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileErrorJournal' fileName='${fileNameErrorJournal}' filePattern='${fileNameErrorJournal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='FATAL' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='ERROR' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileWarn' fileName='${fileNameWarn}' filePattern='${fileNameWarn_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='ERROR' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='WARN' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileWarnJournal' fileName='${fileNameWarnJournal}' filePattern='${fileNameWarnJournal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='ERROR' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='WARN' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileInfo' fileName='${fileNameInfo}' filePattern='${fileNameInfo_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='WARN' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='INFO' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileInfoJournal' fileName='${fileNameInfoJournal}' filePattern='${fileNameInfoJournal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='WARN' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='INFO' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileDebug' fileName='${fileNameDebug}' filePattern='${fileNameDebug_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='INFO' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='DEBUG' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileDebugJournal' fileName='${fileNameDebugJournal}' filePattern='${fileNameDebugJournal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='INFO' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='DEBUG' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileTrace' fileName='${fileNameTrace}' filePattern='${fileNameTrace_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='DEBUG' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='TRACE' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name='fileTraceJournal' fileName='${fileNameTraceJournal}' filePattern='${fileNameTraceJournal_Archive}'>
+			<PatternLayout pattern='${patternLog}'/>
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+				<SizeBasedTriggeringPolicy size='64 MB'/>
+			</Policies>
+			<DefaultRolloverStrategy max='64'/>
+			<Filters>
+				<ThresholdFilter level='DEBUG' onMatch='DENY' onMismatch='NEUTRAL'/>
+				<ThresholdFilter level='TRACE' onMatch='ACCEPT' onMismatch='DENY'/>
+			</Filters>
+		</RollingRandomAccessFile>
+
+	</Appenders>
+
+	<Loggers>
+
+		<Logger level='INFO' name='Journal' additivity='false'>
+			<AppenderRef ref='console'/>
+			<AppenderRef ref='fileFatal'/>
+			<AppenderRef ref='fileFatalJournal'/>
+			<AppenderRef ref='fileError'/>
+			<AppenderRef ref='fileErrorJournal'/>
+			<AppenderRef ref='fileWarn'/>
+			<AppenderRef ref='fileWarnJournal'/>
+			<AppenderRef ref='fileInfo'/>
+			<AppenderRef ref='fileInfoJournal'/>
+			<!-- <AppenderRef ref='fileDebug'/> -->
+			<!-- <AppenderRef ref='fileDebugJournal'/> -->
+			<!-- <AppenderRef ref='fileTrace'/> -->
+			<!-- <AppenderRef ref='fileTraceJournal'/> -->
+		</Logger>
+
+		<Root level='INFO'>
+			<AppenderRef ref='fileFatal'/>
+			<AppenderRef ref='fileError'/>
+			<AppenderRef ref='fileWarn'/>
+			<AppenderRef ref='fileInfo'/>
+			<!-- <AppenderRef ref='fileDebug'/> -->
+			<!-- <AppenderRef ref='fileTrace'/> -->
+		</Root>
+
+	</Loggers>
+
+</Configuration>

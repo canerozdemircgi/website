@@ -1,0 +1,14 @@
+.fieldset-description
+{
+	padding: 0;
+
+	border-top: 2px solid var(--border-out-color);
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+.fieldset-description-legend
+{
+	padding: 0 15px 8px 0;
+}

@@ -1,0 +1,26 @@
+Welcome to the ToolSeq tutorials of Autodesk Maya.
+Alright so we will continue to ToolSeq Randomizer.
+Let us deal with component mode.
+In this mode, items panel will accept any kind of component selections like vertex, edge, face, uv, transform so on and so forth.
+There are ten operations you can type. To get list of them again, left-click to the Operations label over here.
+You can set multiple operations at the same time just like object mode.
+movX, movY and movZ will move your components based on world axises.
+movN moves your components based on normal vector of them.
+The core algorithm of these four operations are implemented using OpenMaya so it will handle millions of components mostly in a few seconds.
+rotX, rotY, rotZ will rotate your components and scaX, scaY, scaZ will scale your components as you can guess.
+However these six operations will regard X, Y and Z axises as component space instead of world space.
+Click on the Randomize button to see results.
+Same Set rules for object mode are also valid for component mode.
+Just separate any items or internals with space instead of new line to assign exactly same random value.
+Flat checkbox over here makes sure to keep same number of separated items in panel with selected items in your scene.
+Otherwise Maya may shorten their multiple names into one.
+Then it is gonna be passed to commands as a direct parameter which may cause undesired results.
+However occasionally this may be the result you wanna achieve, if so just disable Flat option.
+Let us deal with interpolate mode.
+In this mode, all features related to random values are disabled coz they aren't needed.
+Items panel will accept objects and internals panel will accept attributes, similar to object mode.
+Attributes of first object and last object will remain same but others will be assigned by linear interpolation between them.
+Click on the Randomize button to see results.
+Same items Set rule and internals Set rule for object mode are also valid for interpolate mode.
+Flat checkbox is disabled when items panel accepts only objects coz Maya doesn't shorten object names anyway.
+Thanks for watching me, see you in the next video.

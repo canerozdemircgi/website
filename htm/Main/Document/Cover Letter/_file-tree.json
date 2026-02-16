@@ -1,0 +1,21 @@
+{
+	"downloads":
+	[
+		{
+			"label": "Cover Letter<div class='br05'></div>",
+			"label_post": "Short<div class='br05'></div>[ Format: <span class='format'>html</span> ]<div class='br10'></div>",
+			"url": "https://canerozdemircgi.github.io/Resume/index.html?path=cover-short"
+		},
+		{
+			"label": "Cover Letter<div class='br05'></div>",
+			"label_post": "Long<div class='br05'></div>[ Format: <span class='format'>html</span> ]<div class='br20'></div>",
+			"url": "https://canerozdemircgi.github.io/Resume/index.html?path=cover-long"
+		},
+
+		{
+			"label": "Cover Letter<div class='br05'></div>",
+			"label_post": "Development<div class='br05'></div>[ <span class='format'>Source Code</span> ]",
+			"url": "https://github.com/canerozdemircgi/Resume"
+		}
+	]
+}

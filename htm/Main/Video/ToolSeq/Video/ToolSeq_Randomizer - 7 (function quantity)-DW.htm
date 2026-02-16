@@ -1,0 +1,33 @@
+Welcome to the ToolSeq tutorials of Autodesk Maya.
+Alright so we will continue to ToolSeq Randomizer.
+We have been encountered function quantity several times before this moment.
+If you gonna use only one function, set this combobox over here to Single for calling exact same function at every single iteration.
+It is the initial option anyway.
+If you gonna use multiple functions sequentially, set it to Sequential One Next Two or Sequential Two Next One.
+There are two sequential options coz there are two kind of process orders in Randomizer workflow.
+Object mode, Command mode and Color mode start to loop items then inner loop internals.
+But in contrast Component mode starts to loop internals then inner loops items.
+Therefore to match internals with randoms one by one, you have to use Sequential One Next Two for object, command and color modes.
+To match items with randoms one by one, you have to use Sequential Two Next One for object, command and color modes.
+But in contrast to match internals with randoms one by one, you have to use Sequential Two Next One for component mode.
+To match items with randoms one by one, you have to use Sequential One Next Two for component mode.
+It is not that hard after all.
+Alright, interpolate mode has nothing to do with randoms anyway.
+Select, Material and Replace modes can't benefit sequential option because their core must use standard methods to work properly.
+These modes call from randoms panel only once to get how many items will be selected.
+Alright you may remember that these six presets over here switch to sequential option automatically for you.
+Furthermore Color mode switches to sequential automatically if you select rgb, hsv or hsl models.
+Alright so let's test it pretty quickly.
+Since orders are important in sequential options, you may consider to use custom context menu buttons in the items panel.
+Sort as its name pointing out, will sort alphanumerically and natural will also sort but in more human friendly way.
+Reverse and shuffle, as their names pointing out, will reverse and will shuffle items list.
+Let's see those really quick.
+Alright the last option of Percentage in the function quantity combobox, ensures to generate biased randoms.
+Biased random allows to adjust value distributions manually by picking a random function in each call.
+These random functions have additional ratios which are roughly their chances to be picked.
+To achieve this, write multiple functions of any kind and separate them with new lines just like sequential functions.
+Then append a big straight vertical bar then append the probability factor at the end of each line.
+Higher factor means higher probability of the function in each call.
+Alright so let's see percentage in action with movY component mode operation.
+You will realize most values are literally just zero coz this function over here has higher probability so has been picked quite more.
+Thanks for watching me, see you in the next video.

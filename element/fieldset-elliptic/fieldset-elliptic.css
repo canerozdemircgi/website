@@ -1,0 +1,46 @@
+fieldset-elliptic
+{
+	position: relative;
+}
+
+.fieldset-elliptic
+{
+	margin: -5px 0;
+	padding: 0;
+
+	border-top: 2px solid var(--foreground-color);
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+
+	filter:
+		drop-shadow(0 0 2px var(--neon-title-color))
+		drop-shadow(0 0 4px var(--neon-title-color));
+}
+
+.fieldset-elliptic-legend
+{
+	margin: 0 auto;
+	padding: 15px 30px;
+
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	border-left: 2px solid var(--foreground-color);
+	border-right: 2px solid var(--foreground-color);
+	border-radius: 25%;
+
+	transition: padding 0.5s linear;
+}
+
+.fieldset-elliptic-legend:hover
+{
+	padding: 15px 70px;
+}
+
+@media (max-width: 410px)
+{
+	.fieldset-elliptic-legend:hover
+	{
+		padding: 15px 30px;
+	}
+}

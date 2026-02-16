@@ -1,0 +1,53 @@
+<span-description class='f_sans'>
+https://leetcode.com/problems/merge-k-sorted-lists/
+Merge k Sorted Lists
+You are given an array of <u>k</u> linked-lists <u>lists</u>, each linked-list is sorted in ascending order.
+
+Merge all the linked-lists into one sorted linked-list and return it.
+</span-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Constraints
+<ul>
+<li>k == lists.length</li>
+<li>0 <= k <= 10<sup>4</sup></li>
+<li>0 <= lists[i].length <= 500</li>
+<li>-10<sup>4</sup> <= lists[i][j] <= 10<sup>4</sup></li>
+<li>lists[i] is sorted in ascending order.</li>
+<li>The sum of lists[i].length will not exceed 10<sup>4</sup>.</li>
+</ul>
+</fieldset-description>
+
+<div class='br60'></div>
+
+<fieldset-description class='f_mono'>
+Example 1
+Input: lists = [[1, 4, 5], [1, 3, 4], [2, 6]]
+Output: [1, 1, 2, 3, 4, 4, 5, 6]
+Explanation: The linked-lists are
+[
+	1->4->5,
+	1->3->4,
+	2->6
+]
+merging them into one sorted list
+1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 2
+Input: lists = []
+Output: []
+</fieldset-description>
+
+<div class='br20'></div>
+
+<fieldset-description class='f_mono'>
+Example 3
+Input: lists = [[]]
+Output: []
+</fieldset-description>

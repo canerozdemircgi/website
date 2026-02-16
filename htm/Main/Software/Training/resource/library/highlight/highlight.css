@@ -1,0 +1,232 @@
+pre code.hljs
+{
+}
+
+code.hljs
+{
+}
+
+.hljs
+{
+	background-color: transparent;
+	color: var(--foreground-color);
+}
+
+.hljs-subst
+{
+	color: #ff0000;
+}
+
+.hljs-formula
+{
+	color: #ff0000;
+}
+
+.hljs-attr
+{
+	color: #ff0000;
+}
+
+.hljs-property
+{
+	color: #ff0000;
+}
+
+.hljs-params
+{
+	color: #77b767;
+}
+
+.hljs-comment
+{
+	padding: 0 0.5ch;
+
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+	border-radius: 2px;
+}
+
+.hljs-tag
+{
+	color: #ff0000;
+}
+
+.hljs-punctuation
+{
+	color: #ff0000;
+}
+
+.hljs-tag .hljs-name
+{
+	color: #ff0000;
+}
+
+.hljs-tag .hljs-attr
+{
+	color: #ff0000;
+}
+
+.hljs-keyword
+{
+	color: #80b5e1;
+}
+
+.hljs-attribute
+{
+	color: #ff0000;
+}
+
+.hljs-selector-tag
+{
+	color: #ff0000;
+}
+
+.hljs-meta .hljs-keyword
+{
+	color: #ff0000;
+}
+
+.hljs-doctag
+{
+	color: #ff0000;
+}
+
+.hljs-name
+{
+	color: #ff0000;
+}
+
+.hljs-type
+{
+	color: #ff0000;
+}
+
+.hljs-string
+{
+	color: #dd8391;
+}
+
+.hljs-number
+{
+	color: #f0f080;
+}
+
+.hljs-selector-id
+{
+	color: #ff0000;
+}
+
+.hljs-selector-class
+{
+	color: #ff0000;
+}
+
+.hljs-quote
+{
+	color: #ff0000;
+}
+
+.hljs-template-tag
+{
+	color: #ff0000;
+}
+
+.hljs-deletion
+{
+	color: #ff0000;
+}
+
+.hljs-title
+{
+	color: #7cc4c4;
+}
+
+.hljs-section
+{
+	color: #ff0000;
+}
+
+.hljs-regexp
+{
+	color: #ff0000;
+}
+
+.hljs-symbol
+{
+	color: #ff0000;
+}
+
+.hljs-variable
+{
+	color: #ff0000;
+}
+
+.hljs-template-variable
+{
+	color: #ff0000;
+}
+
+.hljs-link
+{
+	color: #ff0000;
+}
+
+.hljs-selector-attr
+{
+	color: #ff0000;
+}
+
+.hljs-operator
+{
+	color: #ff0000;
+}
+
+.hljs-selector-pseudo
+{
+	color: #ff0000;
+}
+
+.hljs-literal
+{
+	color: #e89c5a;
+}
+
+.hljs-built_in
+{
+	color: #b69ec3;
+}
+
+.hljs-bullet
+{
+	color: #ff0000;
+}
+
+.hljs-code
+{
+	color: #ff0000;
+}
+
+.hljs-addition
+{
+	color: #ff0000;
+}
+
+.hljs-meta
+{
+	color: #b0b0b0;
+}
+
+.hljs-meta .hljs-string
+{
+	color: #ff0000;
+}
+
+.hljs-emphasis
+{
+	color: #ff0000;
+}
+
+.hljs-strong
+{
+	color: #ff0000;
+}
